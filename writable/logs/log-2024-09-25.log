@@ -1,0 +1,1587 @@
+ERROR - 2024-09-25 16:01:21 --> mysqli_sql_exception: Table 'inventario.aparatos' doesn't exist in C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `aparato...', 0)
+#1 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparato...')
+#2 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparato...')
+#3 C:\xampp\htdocs\inventario\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparato...', Array, false)
+#4 C:\xampp\htdocs\inventario\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\inventario\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\inventario\app\Models\AparatosModel.php(35): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\inventario\app\Controllers\Aparatos.php(22): App\Models\AparatosModel->AparatosTipo()
+#8 C:\xampp\htdocs\inventario\system\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+#9 C:\xampp\htdocs\inventario\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+#10 C:\xampp\htdocs\inventario\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\inventario\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\inventario\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\inventario\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-09-25 16:01:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'inventario.aparatos' doesn't exist
+[Method: GET, Route: aparatos]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\AparatosModel.php(35): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Aparatos.php(22): App\Models\AparatosModel->AparatosTipo()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 16:01:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'inventario.aparatos' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\AparatosModel.php(35): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Aparatos.php(22): App\Models\AparatosModel->AparatosTipo()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 16:01:21 --> [Caused by] mysqli_sql_exception: Table 'inventario.aparatos' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\AparatosModel.php(35): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Aparatos.php(22): App\Models\AparatosModel->AparatosTipo()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-25 16:02:01 --> mysqli_sql_exception: Table 'inventario.aparatos' doesn't exist in C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `aparato...', 0)
+#1 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparato...')
+#2 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparato...')
+#3 C:\xampp\htdocs\inventario\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparato...', Array, false)
+#4 C:\xampp\htdocs\inventario\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\inventario\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\inventario\app\Models\AparatosModel.php(35): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\inventario\app\Controllers\Aparatos.php(22): App\Models\AparatosModel->AparatosTipo()
+#8 C:\xampp\htdocs\inventario\system\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+#9 C:\xampp\htdocs\inventario\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+#10 C:\xampp\htdocs\inventario\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\inventario\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\inventario\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\inventario\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-09-25 16:02:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'inventario.aparatos' doesn't exist
+[Method: GET, Route: aparatos]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\AparatosModel.php(35): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Aparatos.php(22): App\Models\AparatosModel->AparatosTipo()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 16:02:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'inventario.aparatos' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\AparatosModel.php(35): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Aparatos.php(22): App\Models\AparatosModel->AparatosTipo()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 16:02:01 --> [Caused by] mysqli_sql_exception: Table 'inventario.aparatos' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\AparatosModel.php(35): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Aparatos.php(22): App\Models\AparatosModel->AparatosTipo()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-25 16:02:04 --> mysqli_sql_exception: Table 'inventario.aparatos' doesn't exist in C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `aparato...', 0)
+#1 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparato...')
+#2 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparato...')
+#3 C:\xampp\htdocs\inventario\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparato...', Array, false)
+#4 C:\xampp\htdocs\inventario\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\inventario\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\inventario\app\Models\AparatosModel.php(35): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\inventario\app\Controllers\Aparatos.php(22): App\Models\AparatosModel->AparatosTipo()
+#8 C:\xampp\htdocs\inventario\system\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+#9 C:\xampp\htdocs\inventario\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+#10 C:\xampp\htdocs\inventario\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\inventario\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\inventario\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\inventario\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-09-25 16:02:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'inventario.aparatos' doesn't exist
+[Method: GET, Route: aparatos]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\AparatosModel.php(35): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Aparatos.php(22): App\Models\AparatosModel->AparatosTipo()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 16:02:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'inventario.aparatos' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\AparatosModel.php(35): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Aparatos.php(22): App\Models\AparatosModel->AparatosTipo()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 16:02:04 --> [Caused by] mysqli_sql_exception: Table 'inventario.aparatos' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\AparatosModel.php(35): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Aparatos.php(22): App\Models\AparatosModel->AparatosTipo()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-25 16:23:47 --> mysqli_sql_exception: Unknown column 'tipo_aparatos.name' in 'field list' in C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `aparato...', 0)
+#1 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparato...')
+#2 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparato...')
+#3 C:\xampp\htdocs\inventario\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparato...', Array, false)
+#4 C:\xampp\htdocs\inventario\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\inventario\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\inventario\app\Models\AparatosModel.php(35): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\inventario\app\Controllers\Aparatos.php(22): App\Models\AparatosModel->AparatosTipo()
+#8 C:\xampp\htdocs\inventario\system\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+#9 C:\xampp\htdocs\inventario\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+#10 C:\xampp\htdocs\inventario\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\inventario\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\inventario\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\inventario\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-09-25 16:23:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tipo_aparatos.name' in 'field list'
+[Method: GET, Route: aparatos]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\AparatosModel.php(35): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Aparatos.php(22): App\Models\AparatosModel->AparatosTipo()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 16:23:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tipo_aparatos.name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\AparatosModel.php(35): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Aparatos.php(22): App\Models\AparatosModel->AparatosTipo()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 16:23:48 --> [Caused by] mysqli_sql_exception: Unknown column 'tipo_aparatos.name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\AparatosModel.php(35): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Aparatos.php(22): App\Models\AparatosModel->AparatosTipo()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-25 16:24:13 --> mysqli_sql_exception: Unknown column 'tipo_aparatos.name' in 'field list' in C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `aparato...', 0)
+#1 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparato...')
+#2 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparato...')
+#3 C:\xampp\htdocs\inventario\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparato...', Array, false)
+#4 C:\xampp\htdocs\inventario\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\inventario\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\inventario\app\Models\AparatosModel.php(35): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\inventario\app\Controllers\Aparatos.php(22): App\Models\AparatosModel->AparatosTipo()
+#8 C:\xampp\htdocs\inventario\system\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+#9 C:\xampp\htdocs\inventario\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+#10 C:\xampp\htdocs\inventario\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\inventario\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\inventario\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\inventario\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-09-25 16:24:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tipo_aparatos.name' in 'field list'
+[Method: GET, Route: aparatos]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\AparatosModel.php(35): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Aparatos.php(22): App\Models\AparatosModel->AparatosTipo()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 16:24:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tipo_aparatos.name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\AparatosModel.php(35): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Aparatos.php(22): App\Models\AparatosModel->AparatosTipo()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 16:24:13 --> [Caused by] mysqli_sql_exception: Unknown column 'tipo_aparatos.name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\AparatosModel.php(35): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Aparatos.php(22): App\Models\AparatosModel->AparatosTipo()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-25 16:31:50 --> mysqli_sql_exception: Unknown column 'tipo_aparatos.name' in 'field list' in C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `aparato...', 0)
+#1 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparato...')
+#2 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparato...')
+#3 C:\xampp\htdocs\inventario\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparato...', Array, false)
+#4 C:\xampp\htdocs\inventario\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\inventario\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\inventario\app\Models\AparatosModel.php(35): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\inventario\app\Controllers\Aparatos.php(22): App\Models\AparatosModel->AparatosTipo()
+#8 C:\xampp\htdocs\inventario\system\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+#9 C:\xampp\htdocs\inventario\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+#10 C:\xampp\htdocs\inventario\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\inventario\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\inventario\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\inventario\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-09-25 16:31:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tipo_aparatos.name' in 'field list'
+[Method: GET, Route: aparatos]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\AparatosModel.php(35): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Aparatos.php(22): App\Models\AparatosModel->AparatosTipo()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 16:31:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tipo_aparatos.name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\AparatosModel.php(35): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Aparatos.php(22): App\Models\AparatosModel->AparatosTipo()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 16:31:50 --> [Caused by] mysqli_sql_exception: Unknown column 'tipo_aparatos.name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\AparatosModel.php(35): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Aparatos.php(22): App\Models\AparatosModel->AparatosTipo()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-25 16:32:05 --> mysqli_sql_exception: Unknown column 'tipo_aparatos.name' in 'field list' in C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `aparato...', 0)
+#1 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparato...')
+#2 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparato...')
+#3 C:\xampp\htdocs\inventario\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparato...', Array, false)
+#4 C:\xampp\htdocs\inventario\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\inventario\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\inventario\app\Models\AparatosModel.php(35): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\inventario\app\Controllers\Aparatos.php(22): App\Models\AparatosModel->AparatosTipo()
+#8 C:\xampp\htdocs\inventario\system\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+#9 C:\xampp\htdocs\inventario\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+#10 C:\xampp\htdocs\inventario\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\inventario\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\inventario\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\inventario\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-09-25 16:32:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tipo_aparatos.name' in 'field list'
+[Method: GET, Route: aparatos]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\AparatosModel.php(35): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Aparatos.php(22): App\Models\AparatosModel->AparatosTipo()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 16:32:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tipo_aparatos.name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\AparatosModel.php(35): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Aparatos.php(22): App\Models\AparatosModel->AparatosTipo()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 16:32:05 --> [Caused by] mysqli_sql_exception: Unknown column 'tipo_aparatos.name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `tipo_aparatos`.`name` AS `tipo`
+FROM `aparatos`
+JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`id`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\AparatosModel.php(35): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Aparatos.php(22): App\Models\AparatosModel->AparatosTipo()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-25 16:32:59 --> mysqli_sql_exception: Table 'inventario.area' doesn't exist in C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `aparato...', 0)
+#1 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparato...')
+#2 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparato...')
+#3 C:\xampp\htdocs\inventario\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparato...', Array, false)
+#4 C:\xampp\htdocs\inventario\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\inventario\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\inventario\app\Models\AparatosModel.php(42): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\inventario\app\Controllers\Aparatos.php(23): App\Models\AparatosModel->AparatosArea()
+#8 C:\xampp\htdocs\inventario\system\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+#9 C:\xampp\htdocs\inventario\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+#10 C:\xampp\htdocs\inventario\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\inventario\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\inventario\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\inventario\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-09-25 16:32:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'inventario.area' doesn't exist
+[Method: GET, Route: aparatos]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `areas`.`nombreArea` AS `area`
+FROM `aparatos`
+JOIN `area` ON `aparatos`.`area` = `areas`.`idArea`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\AparatosModel.php(42): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Aparatos.php(23): App\Models\AparatosModel->AparatosArea()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 16:32:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'inventario.area' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparatos`.*, `areas`.`nombreArea` AS `area`
+FROM `aparatos`
+JOIN `area` ON `aparatos`.`area` = `areas`.`idArea`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparatos`.*, `areas`.`nombreArea` AS `area`
+FROM `aparatos`
+JOIN `area` ON `aparatos`.`area` = `areas`.`idArea`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `areas`.`nombreArea` AS `area`
+FROM `aparatos`
+JOIN `area` ON `aparatos`.`area` = `areas`.`idArea`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\AparatosModel.php(42): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Aparatos.php(23): App\Models\AparatosModel->AparatosArea()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 16:32:59 --> [Caused by] mysqli_sql_exception: Table 'inventario.area' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `aparatos`.*, `areas`.`nombreArea` AS `area`
+FROM `aparatos`
+JOIN `area` ON `aparatos`.`area` = `areas`.`idArea`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparatos`.*, `areas`.`nombreArea` AS `area`
+FROM `aparatos`
+JOIN `area` ON `aparatos`.`area` = `areas`.`idArea`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparatos`.*, `areas`.`nombreArea` AS `area`
+FROM `aparatos`
+JOIN `area` ON `aparatos`.`area` = `areas`.`idArea`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `areas`.`nombreArea` AS `area`
+FROM `aparatos`
+JOIN `area` ON `aparatos`.`area` = `areas`.`idArea`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\AparatosModel.php(42): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Aparatos.php(23): App\Models\AparatosModel->AparatosArea()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 17:03:30 --> CodeIgniter\Validation\Exceptions\ValidationException: "null" is not a valid rule.
+[Method: GET, Route: aparatos/create]
+in SYSTEMPATH\Validation\Validation.php on line 348.
+ 1 SYSTEMPATH\Validation\Validation.php(348): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('null')
+ 2 SYSTEMPATH\Validation\Validation.php(204): CodeIgniter\Validation\Validation->processRules('disco', 'disco', null, [...], [...], 'disco')
+ 3 SYSTEMPATH\Controller.php(137): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Aparatos.php(76): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->create()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 17:05:50 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: aparatos/create]
+in SYSTEMPATH\Validation\Validation.php on line 792.
+ 1 SYSTEMPATH\Validation\Validation.php(792): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\inventario\\system\\Validation\\Validation.php', 792)
+ 2 SYSTEMPATH\Validation\Validation.php(158): CodeIgniter\Validation\Validation->fillPlaceholders([...], [...])
+ 3 SYSTEMPATH\Controller.php(137): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Aparatos.php(77): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->create()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-25 17:06:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:06:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:07:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:07:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:07:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-25 17:07:59 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "empleados/create.php"
+[Method: GET, Route: create_aparatos]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('empleados/create.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('empleados/create', [], true)
+ 3 APPPATH\Controllers\Aparatos.php(53): view('empleados/create', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 17:09:05 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "aparatos/create.php"
+[Method: GET, Route: create_aparatos]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('aparatos/create.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('aparatos/create', [], true)
+ 3 APPPATH\Controllers\Aparatos.php(53): view('aparatos/create', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-25 17:09:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-25 17:09:21 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: create_aparatos]
+in APPPATH\Views\create_aparatos.php on line 25.
+ 1 APPPATH\Views\create_aparatos.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\inventario\\app\\Views\\create_aparatos.php', 25)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\create_aparatos.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('create_aparatos', [], true)
+ 5 APPPATH\Controllers\Aparatos.php(53): view('create_aparatos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-25 17:10:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-25 17:10:35 --> ErrorException: Undefined array key "idTipo"
+[Method: GET, Route: create_aparatos]
+in APPPATH\Views\create_aparatos.php on line 25.
+ 1 APPPATH\Views\create_aparatos.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idTipo"', 'C:\\xampp\\htdocs\\inventario\\app\\Views\\create_aparatos.php', 25)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\create_aparatos.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('create_aparatos', [], true)
+ 5 APPPATH\Controllers\Aparatos.php(53): view('create_aparatos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-25 17:10:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-25 17:10:37 --> ErrorException: Undefined array key "idTipo"
+[Method: GET, Route: create_aparatos]
+in APPPATH\Views\create_aparatos.php on line 25.
+ 1 APPPATH\Views\create_aparatos.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idTipo"', 'C:\\xampp\\htdocs\\inventario\\app\\Views\\create_aparatos.php', 25)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\create_aparatos.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('create_aparatos', [], true)
+ 5 APPPATH\Controllers\Aparatos.php(53): view('create_aparatos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-25 17:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:11:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:11:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:11:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-25 17:24:40 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "create_aparato.php"
+[Method: GET, Route: create_aparatos]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('create_aparato.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('create_aparato', [], true)
+ 3 APPPATH\Controllers\Aparatos.php(54): view('create_aparato', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 17:24:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "create_aparato.php"
+[Method: GET, Route: create_aparatos]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('create_aparato.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('create_aparato', [], true)
+ 3 APPPATH\Controllers\Aparatos.php(54): view('create_aparato', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 17:27:24 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "create_aparato.php"
+[Method: GET, Route: create_aparato]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('create_aparato.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('create_aparato', [], true)
+ 3 APPPATH\Controllers\Aparatos.php(54): view('create_aparato', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-25 17:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:33:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:34:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:34:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:34:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:34:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:34:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:34:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:34:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:34:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:34:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:42:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-25 17:42:12 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: aparatos/create]
+in APPPATH\Views\create_aparatos.php on line 25.
+ 1 APPPATH\Views\create_aparatos.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\inventario\\app\\Views\\create_aparatos.php', 25)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\create_aparatos.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('create_aparatos', [], true)
+ 5 APPPATH\Controllers\Aparatos.php(29): view('create_aparatos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-25 17:43:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:44:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:44:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:45:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:47:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 17:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-25 17:48:22 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\inventario\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\inventario\system\Validation\StrictRules\Rules.php(172): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\inventario\system\Validation\Validation.php(339): CodeIgniter\Validation\StrictRules\Rules->is_not_unique('3', 'id', Array, NULL, 'tipo')
+#6 C:\xampp\htdocs\inventario\system\Validation\Validation.php(204): CodeIgniter\Validation\Validation->processRules('tipo', 'tipo', '3', Array, Array, 'tipo')
+#7 C:\xampp\htdocs\inventario\system\Controller.php(137): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\inventario\app\Controllers\Aparatos.php(42): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\inventario\system\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+#10 C:\xampp\htdocs\inventario\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+#11 C:\xampp\htdocs\inventario\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\inventario\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\inventario\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\inventario\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2024-09-25 17:48:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+[Method: POST, Route: aparatos/create]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `tipo_aparatos`
+WHERE `id` = :id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(172): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(339): CodeIgniter\Validation\StrictRules\Rules->is_not_unique('3', 'id', [...], null, 'tipo')
+ 4 SYSTEMPATH\Validation\Validation.php(204): CodeIgniter\Validation\Validation->processRules('tipo', 'tipo', '3', [...], [...], 'tipo')
+ 5 SYSTEMPATH\Controller.php(137): CodeIgniter\Validation\Validation->run()
+ 6 APPPATH\Controllers\Aparatos.php(42): CodeIgniter\Controller->validate([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 17:48:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `tipo_aparatos`
+WHERE `id` = \'3\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `tipo_aparatos`
+WHERE `id` = \'3\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `tipo_aparatos`
+WHERE `id` = :id:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(172): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\Validation.php(339): CodeIgniter\Validation\StrictRules\Rules->is_not_unique('3', 'id', [...], null, 'tipo')
+ 6 SYSTEMPATH\Validation\Validation.php(204): CodeIgniter\Validation\Validation->processRules('tipo', 'tipo', '3', [...], [...], 'tipo')
+ 7 SYSTEMPATH\Controller.php(137): CodeIgniter\Validation\Validation->run()
+ 8 APPPATH\Controllers\Aparatos.php(42): CodeIgniter\Controller->validate([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 17:48:22 --> [Caused by] mysqli_sql_exception: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT 1
+FROM `tipo_aparatos`
+WHERE `id` = \'3\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `tipo_aparatos`
+WHERE `id` = \'3\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `tipo_aparatos`
+WHERE `id` = \'3\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `tipo_aparatos`
+WHERE `id` = :id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(172): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(339): CodeIgniter\Validation\StrictRules\Rules->is_not_unique('3', 'id', [...], null, 'tipo')
+ 7 SYSTEMPATH\Validation\Validation.php(204): CodeIgniter\Validation\Validation->processRules('tipo', 'tipo', '3', [...], [...], 'tipo')
+ 8 SYSTEMPATH\Controller.php(137): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\Aparatos.php(42): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-25 17:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-25 17:50:38 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\AparatosModel"
+[Method: POST, Route: aparatos/create]
+in SYSTEMPATH\Model.php on line 824.
+ 1 SYSTEMPATH\Model.php(824): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\AparatosModel')
+ 2 SYSTEMPATH\BaseModel.php(821): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Aparatos.php(49): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-25 17:56:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-25 17:56:35 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\AparatosModel"
+[Method: POST, Route: aparatos/create]
+in SYSTEMPATH\Model.php on line 824.
+ 1 SYSTEMPATH\Model.php(824): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\AparatosModel')
+ 2 SYSTEMPATH\BaseModel.php(821): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Aparatos.php(49): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-25 17:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-25 17:59:43 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\AparatosModel"
+[Method: POST, Route: aparatos/create]
+in SYSTEMPATH\Model.php on line 824.
+ 1 SYSTEMPATH\Model.php(824): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\AparatosModel')
+ 2 SYSTEMPATH\BaseModel.php(821): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Aparatos.php(55): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-25 18:01:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-25 18:01:56 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\AparatosModel"
+[Method: POST, Route: aparatos/create]
+in SYSTEMPATH\Model.php on line 824.
+ 1 SYSTEMPATH\Model.php(824): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\AparatosModel')
+ 2 SYSTEMPATH\BaseModel.php(821): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Aparatos.php(55): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-25 18:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 18:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-25 18:05:34 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\AparatosModel"
+[Method: POST, Route: aparatos/create]
+in SYSTEMPATH\Model.php on line 824.
+ 1 SYSTEMPATH\Model.php(824): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\AparatosModel')
+ 2 SYSTEMPATH\BaseModel.php(821): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Aparatos.php(55): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-25 18:05:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-25 18:06:04 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\AparatosModel"
+[Method: POST, Route: aparatos/create]
+in SYSTEMPATH\Model.php on line 824.
+ 1 SYSTEMPATH\Model.php(824): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\AparatosModel')
+ 2 SYSTEMPATH\BaseModel.php(821): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Aparatos.php(55): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-25 18:07:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-25 18:07:30 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\xampp\htdocs\inventario\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\xampp\htdocs\inventario\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\inventario\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\inventario\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\inventario\app\Controllers\Aparatos.php(55): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\inventario\system\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+#9 C:\xampp\htdocs\inventario\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+#10 C:\xampp\htdocs\inventario\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\inventario\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\inventario\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\inventario\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-09-25 18:07:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: aparatos/create]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `aparatos` (`tipo`, `marca`, `modelo`, `serie`, `disco`, `ram`, `so`, `propiedad`, `acciones`, `valor_compra`, `fecha_compra`, `area`, `created_at`, `updated_at`) VALUES (:tipo:, :marca:, :modelo:, :serie:, :disco:, :ram:, :so:, :propiedad:, :acciones:, :valor_compra:, :fecha_compra:, :area:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Aparatos.php(55): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 18:07:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `aparatos` (`tipo`, `marca`, `modelo`, `serie`, `disco`, `ram`, `so`, `propiedad`, `acciones`, `valor_compra`, `fecha_compra`, `area`, `created_at`, `updated_at`) VALUES (\'1\', \'44343\', \'TGT3\', \'T3445G\', \'20\', \'11\', \'RFE\', \'1221\', \'20\', \'122\', \'22/12/2001\', \'5\', \'2024-09-25 18:07:30\', \'2024-09-25 18:07:30\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `aparatos` (`tipo`, `marca`, `modelo`, `serie`, `disco`, `ram`, `so`, `propiedad`, `acciones`, `valor_compra`, `fecha_compra`, `area`, `created_at`, `updated_at`) VALUES (\'1\', \'44343\', \'TGT3\', \'T3445G\', \'20\', \'11\', \'RFE\', \'1221\', \'20\', \'122\', \'22/12/2001\', \'5\', \'2024-09-25 18:07:30\', \'2024-09-25 18:07:30\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `aparatos` (`tipo`, `marca`, `modelo`, `serie`, `disco`, `ram`, `so`, `propiedad`, `acciones`, `valor_compra`, `fecha_compra`, `area`, `created_at`, `updated_at`) VALUES (:tipo:, :marca:, :modelo:, :serie:, :disco:, :ram:, :so:, :propiedad:, :acciones:, :valor_compra:, :fecha_compra:, :area:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Aparatos.php(55): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 18:07:30 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `aparatos` (`tipo`, `marca`, `modelo`, `serie`, `disco`, `ram`, `so`, `propiedad`, `acciones`, `valor_compra`, `fecha_compra`, `area`, `created_at`, `updated_at`) VALUES (\'1\', \'44343\', \'TGT3\', \'T3445G\', \'20\', \'11\', \'RFE\', \'1221\', \'20\', \'122\', \'22/12/2001\', \'5\', \'2024-09-25 18:07:30\', \'2024-09-25 18:07:30\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `aparatos` (`tipo`, `marca`, `modelo`, `serie`, `disco`, `ram`, `so`, `propiedad`, `acciones`, `valor_compra`, `fecha_compra`, `area`, `created_at`, `updated_at`) VALUES (\'1\', \'44343\', \'TGT3\', \'T3445G\', \'20\', \'11\', \'RFE\', \'1221\', \'20\', \'122\', \'22/12/2001\', \'5\', \'2024-09-25 18:07:30\', \'2024-09-25 18:07:30\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `aparatos` (`tipo`, `marca`, `modelo`, `serie`, `disco`, `ram`, `so`, `propiedad`, `acciones`, `valor_compra`, `fecha_compra`, `area`, `created_at`, `updated_at`) VALUES (\'1\', \'44343\', \'TGT3\', \'T3445G\', \'20\', \'11\', \'RFE\', \'1221\', \'20\', \'122\', \'22/12/2001\', \'5\', \'2024-09-25 18:07:30\', \'2024-09-25 18:07:30\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `aparatos` (`tipo`, `marca`, `modelo`, `serie`, `disco`, `ram`, `so`, `propiedad`, `acciones`, `valor_compra`, `fecha_compra`, `area`, `created_at`, `updated_at`) VALUES (:tipo:, :marca:, :modelo:, :serie:, :disco:, :ram:, :so:, :propiedad:, :acciones:, :valor_compra:, :fecha_compra:, :area:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Aparatos.php(55): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-25 18:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-25 18:08:19 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\xampp\htdocs\inventario\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\xampp\htdocs\inventario\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\inventario\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\inventario\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\inventario\app\Controllers\Aparatos.php(55): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\inventario\system\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+#9 C:\xampp\htdocs\inventario\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+#10 C:\xampp\htdocs\inventario\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\inventario\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\inventario\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\inventario\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-09-25 18:08:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: aparatos/create]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `aparatos` (`tipo`, `marca`, `modelo`, `serie`, `disco`, `ram`, `so`, `propiedad`, `acciones`, `valor_compra`, `fecha_compra`, `area`, `created_at`, `updated_at`) VALUES (:tipo:, :marca:, :modelo:, :serie:, :disco:, :ram:, :so:, :propiedad:, :acciones:, :valor_compra:, :fecha_compra:, :area:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Aparatos.php(55): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 18:08:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `aparatos` (`tipo`, `marca`, `modelo`, `serie`, `disco`, `ram`, `so`, `propiedad`, `acciones`, `valor_compra`, `fecha_compra`, `area`, `created_at`, `updated_at`) VALUES (\'1\', \'44343\', \'TGT3\', \'T3445G\', \'20\', \'11\', \'RFE\', \'1221\', \'20\', \'122\', \'22/12/2001\', \'5\', \'2024-09-25 18:08:19\', \'2024-09-25 18:08:19\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `aparatos` (`tipo`, `marca`, `modelo`, `serie`, `disco`, `ram`, `so`, `propiedad`, `acciones`, `valor_compra`, `fecha_compra`, `area`, `created_at`, `updated_at`) VALUES (\'1\', \'44343\', \'TGT3\', \'T3445G\', \'20\', \'11\', \'RFE\', \'1221\', \'20\', \'122\', \'22/12/2001\', \'5\', \'2024-09-25 18:08:19\', \'2024-09-25 18:08:19\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `aparatos` (`tipo`, `marca`, `modelo`, `serie`, `disco`, `ram`, `so`, `propiedad`, `acciones`, `valor_compra`, `fecha_compra`, `area`, `created_at`, `updated_at`) VALUES (:tipo:, :marca:, :modelo:, :serie:, :disco:, :ram:, :so:, :propiedad:, :acciones:, :valor_compra:, :fecha_compra:, :area:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Aparatos.php(55): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 18:08:19 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `aparatos` (`tipo`, `marca`, `modelo`, `serie`, `disco`, `ram`, `so`, `propiedad`, `acciones`, `valor_compra`, `fecha_compra`, `area`, `created_at`, `updated_at`) VALUES (\'1\', \'44343\', \'TGT3\', \'T3445G\', \'20\', \'11\', \'RFE\', \'1221\', \'20\', \'122\', \'22/12/2001\', \'5\', \'2024-09-25 18:08:19\', \'2024-09-25 18:08:19\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `aparatos` (`tipo`, `marca`, `modelo`, `serie`, `disco`, `ram`, `so`, `propiedad`, `acciones`, `valor_compra`, `fecha_compra`, `area`, `created_at`, `updated_at`) VALUES (\'1\', \'44343\', \'TGT3\', \'T3445G\', \'20\', \'11\', \'RFE\', \'1221\', \'20\', \'122\', \'22/12/2001\', \'5\', \'2024-09-25 18:08:19\', \'2024-09-25 18:08:19\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `aparatos` (`tipo`, `marca`, `modelo`, `serie`, `disco`, `ram`, `so`, `propiedad`, `acciones`, `valor_compra`, `fecha_compra`, `area`, `created_at`, `updated_at`) VALUES (\'1\', \'44343\', \'TGT3\', \'T3445G\', \'20\', \'11\', \'RFE\', \'1221\', \'20\', \'122\', \'22/12/2001\', \'5\', \'2024-09-25 18:08:19\', \'2024-09-25 18:08:19\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `aparatos` (`tipo`, `marca`, `modelo`, `serie`, `disco`, `ram`, `so`, `propiedad`, `acciones`, `valor_compra`, `fecha_compra`, `area`, `created_at`, `updated_at`) VALUES (:tipo:, :marca:, :modelo:, :serie:, :disco:, :ram:, :so:, :propiedad:, :acciones:, :valor_compra:, :fecha_compra:, :area:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Aparatos.php(55): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-25 18:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 18:08:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-25 18:08:38 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\xampp\htdocs\inventario\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\xampp\htdocs\inventario\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\inventario\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\inventario\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\inventario\app\Controllers\Aparatos.php(55): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\inventario\system\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+#9 C:\xampp\htdocs\inventario\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+#10 C:\xampp\htdocs\inventario\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\inventario\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\inventario\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\inventario\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-09-25 18:08:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: aparatos/create]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `aparatos` (`tipo`, `marca`, `modelo`, `serie`, `disco`, `ram`, `so`, `propiedad`, `acciones`, `valor_compra`, `fecha_compra`, `area`, `created_at`, `updated_at`) VALUES (:tipo:, :marca:, :modelo:, :serie:, :disco:, :ram:, :so:, :propiedad:, :acciones:, :valor_compra:, :fecha_compra:, :area:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Aparatos.php(55): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 18:08:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `aparatos` (`tipo`, `marca`, `modelo`, `serie`, `disco`, `ram`, `so`, `propiedad`, `acciones`, `valor_compra`, `fecha_compra`, `area`, `created_at`, `updated_at`) VALUES (\'1\', \'reer\', \'feer\', \'erreer\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2\', \'2024-09-25 18:08:38\', \'2024-09-25 18:08:38\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `aparatos` (`tipo`, `marca`, `modelo`, `serie`, `disco`, `ram`, `so`, `propiedad`, `acciones`, `valor_compra`, `fecha_compra`, `area`, `created_at`, `updated_at`) VALUES (\'1\', \'reer\', \'feer\', \'erreer\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2\', \'2024-09-25 18:08:38\', \'2024-09-25 18:08:38\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `aparatos` (`tipo`, `marca`, `modelo`, `serie`, `disco`, `ram`, `so`, `propiedad`, `acciones`, `valor_compra`, `fecha_compra`, `area`, `created_at`, `updated_at`) VALUES (:tipo:, :marca:, :modelo:, :serie:, :disco:, :ram:, :so:, :propiedad:, :acciones:, :valor_compra:, :fecha_compra:, :area:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Aparatos.php(55): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 18:08:38 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `aparatos` (`tipo`, `marca`, `modelo`, `serie`, `disco`, `ram`, `so`, `propiedad`, `acciones`, `valor_compra`, `fecha_compra`, `area`, `created_at`, `updated_at`) VALUES (\'1\', \'reer\', \'feer\', \'erreer\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2\', \'2024-09-25 18:08:38\', \'2024-09-25 18:08:38\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `aparatos` (`tipo`, `marca`, `modelo`, `serie`, `disco`, `ram`, `so`, `propiedad`, `acciones`, `valor_compra`, `fecha_compra`, `area`, `created_at`, `updated_at`) VALUES (\'1\', \'reer\', \'feer\', \'erreer\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2\', \'2024-09-25 18:08:38\', \'2024-09-25 18:08:38\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `aparatos` (`tipo`, `marca`, `modelo`, `serie`, `disco`, `ram`, `so`, `propiedad`, `acciones`, `valor_compra`, `fecha_compra`, `area`, `created_at`, `updated_at`) VALUES (\'1\', \'reer\', \'feer\', \'erreer\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2\', \'2024-09-25 18:08:38\', \'2024-09-25 18:08:38\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `aparatos` (`tipo`, `marca`, `modelo`, `serie`, `disco`, `ram`, `so`, `propiedad`, `acciones`, `valor_compra`, `fecha_compra`, `area`, `created_at`, `updated_at`) VALUES (:tipo:, :marca:, :modelo:, :serie:, :disco:, :ram:, :so:, :propiedad:, :acciones:, :valor_compra:, :fecha_compra:, :area:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Aparatos.php(55): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->new()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-25 18:10:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 18:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 18:10:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 18:11:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 18:11:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 18:11:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 18:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 18:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 18:13:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 18:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-25 18:24:28 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: aparatos/edit/1]
+in APPPATH\Views\edit_aparatos.php on line 19.
+ 1 APPPATH\Views\edit_aparatos.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\inventario\\app\\Views\\edit_aparatos.php', 19)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\edit_aparatos.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('edit_aparatos', [], true)
+ 5 APPPATH\Controllers\Aparatos.php(92): view('edit_aparatos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-25 18:25:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-09-25 18:25:06 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\edit_aparatos.php on line 92.
+ 1 APPPATH\Views\edit_aparatos.php(92): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\edit_aparatos.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('edit_aparatos', [], true)
+ 5 APPPATH\Controllers\Aparatos.php(92): view('edit_aparatos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-25 18:25:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-25 18:32:32 --> ErrorException: Undefined variable $aparatos
+[Method: GET, Route: aparatos]
+in APPPATH\Views\aparatos.php on line 32.
+ 1 APPPATH\Views\aparatos.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $aparatos', 'C:\\xampp\\htdocs\\inventario\\app\\Views\\aparatos.php', 32)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\aparatos.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('aparatos', [], true)
+ 5 APPPATH\Controllers\Aparatos.php(27): view('aparatos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 18:32:40 --> ErrorException: Undefined variable $aparatos
+[Method: GET, Route: aparatos]
+in APPPATH\Views\aparatos.php on line 32.
+ 1 APPPATH\Views\aparatos.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $aparatos', 'C:\\xampp\\htdocs\\inventario\\app\\Views\\aparatos.php', 32)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\aparatos.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('aparatos', [], true)
+ 5 APPPATH\Controllers\Aparatos.php(27): view('aparatos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-25 18:34:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-25 18:34:32 --> BadMethodCallException: Call to undefined method App\Models\AparatosModel::getTipoAparatos
+[Method: GET, Route: aparatos]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Aparatos.php(24): CodeIgniter\Model->__call('getTipoAparatos', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 18:35:22 --> ErrorException: Undefined variable $aparatos
+[Method: GET, Route: aparatos]
+in APPPATH\Views\aparatos.php on line 32.
+ 1 APPPATH\Views\aparatos.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $aparatos', 'C:\\xampp\\htdocs\\inventario\\app\\Views\\aparatos.php', 32)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\aparatos.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('aparatos', [], true)
+ 5 APPPATH\Controllers\Aparatos.php(27): view('aparatos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 18:35:39 --> ErrorException: Undefined variable $aparatos
+[Method: GET, Route: aparatos]
+in APPPATH\Views\aparatos.php on line 32.
+ 1 APPPATH\Views\aparatos.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $aparatos', 'C:\\xampp\\htdocs\\inventario\\app\\Views\\aparatos.php', 32)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\aparatos.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('aparatos', [], true)
+ 5 APPPATH\Controllers\Aparatos.php(27): view('aparatos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 18:37:21 --> ErrorException: Undefined array key "idAparato"
+[Method: GET, Route: aparatos]
+in APPPATH\Views\aparatos.php on line 34.
+ 1 APPPATH\Views\aparatos.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idAparato"', 'C:\\xampp\\htdocs\\inventario\\app\\Views\\aparatos.php', 34)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\aparatos.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('aparatos', [], true)
+ 5 APPPATH\Controllers\Aparatos.php(27): view('aparatos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-25 18:39:29 --> mysqli_sql_exception: Table 'inventario.area' doesn't exist in C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `aparato...', 0)
+#1 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparato...')
+#2 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparato...')
+#3 C:\xampp\htdocs\inventario\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparato...', Array, false)
+#4 C:\xampp\htdocs\inventario\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\inventario\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\inventario\app\Controllers\Aparatos.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\inventario\system\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+#8 C:\xampp\htdocs\inventario\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+#9 C:\xampp\htdocs\inventario\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\inventario\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\inventario\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\inventario\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-09-25 18:39:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'inventario.area' doesn't exist
+[Method: GET, Route: aparatos]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `tipo_aparatos`.`nombreTipo`, `area`.`nombreArea`
+FROM `aparatos`
+LEFT JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`idTipo`
+LEFT JOIN `area` ON `aparatos`.`area` = `area`.`idArea`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Aparatos.php(28): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 18:39:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'inventario.area' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparatos`.*, `tipo_aparatos`.`nombreTipo`, `area`.`nombreArea`
+FROM `aparatos`
+LEFT JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`idTipo`
+LEFT JOIN `area` ON `aparatos`.`area` = `area`.`idArea`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparatos`.*, `tipo_aparatos`.`nombreTipo`, `area`.`nombreArea`
+FROM `aparatos`
+LEFT JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`idTipo`
+LEFT JOIN `area` ON `aparatos`.`area` = `area`.`idArea`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `tipo_aparatos`.`nombreTipo`, `area`.`nombreArea`
+FROM `aparatos`
+LEFT JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`idTipo`
+LEFT JOIN `area` ON `aparatos`.`area` = `area`.`idArea`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Aparatos.php(28): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 18:39:29 --> [Caused by] mysqli_sql_exception: Table 'inventario.area' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `aparatos`.*, `tipo_aparatos`.`nombreTipo`, `area`.`nombreArea`
+FROM `aparatos`
+LEFT JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`idTipo`
+LEFT JOIN `area` ON `aparatos`.`area` = `area`.`idArea`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparatos`.*, `tipo_aparatos`.`nombreTipo`, `area`.`nombreArea`
+FROM `aparatos`
+LEFT JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`idTipo`
+LEFT JOIN `area` ON `aparatos`.`area` = `area`.`idArea`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparatos`.*, `tipo_aparatos`.`nombreTipo`, `area`.`nombreArea`
+FROM `aparatos`
+LEFT JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`idTipo`
+LEFT JOIN `area` ON `aparatos`.`area` = `area`.`idArea`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `tipo_aparatos`.`nombreTipo`, `area`.`nombreArea`
+FROM `aparatos`
+LEFT JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`idTipo`
+LEFT JOIN `area` ON `aparatos`.`area` = `area`.`idArea`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Aparatos.php(28): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-09-25 18:41:06 --> mysqli_sql_exception: Unknown column 'areaa.idArea' in 'on clause' in C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `aparato...', 0)
+#1 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparato...')
+#2 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparato...')
+#3 C:\xampp\htdocs\inventario\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparato...', Array, false)
+#4 C:\xampp\htdocs\inventario\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\inventario\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\inventario\app\Controllers\Aparatos.php(29): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\inventario\system\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+#8 C:\xampp\htdocs\inventario\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+#9 C:\xampp\htdocs\inventario\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\inventario\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\inventario\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\inventario\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-09-25 18:41:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'areaa.idArea' in 'on clause'
+[Method: GET, Route: aparatos]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `tipo_aparatos`.`nombreTipo`, `areas`.`nombreArea`
+FROM `aparatos`
+LEFT JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`idTipo`
+LEFT JOIN `areas` ON `aparatos`.`area` = `areaa`.`idArea`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Aparatos.php(29): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 18:41:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'areaa.idArea' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparatos`.*, `tipo_aparatos`.`nombreTipo`, `areas`.`nombreArea`
+FROM `aparatos`
+LEFT JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`idTipo`
+LEFT JOIN `areas` ON `aparatos`.`area` = `areaa`.`idArea`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparatos`.*, `tipo_aparatos`.`nombreTipo`, `areas`.`nombreArea`
+FROM `aparatos`
+LEFT JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`idTipo`
+LEFT JOIN `areas` ON `aparatos`.`area` = `areaa`.`idArea`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `tipo_aparatos`.`nombreTipo`, `areas`.`nombreArea`
+FROM `aparatos`
+LEFT JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`idTipo`
+LEFT JOIN `areas` ON `aparatos`.`area` = `areaa`.`idArea`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Aparatos.php(29): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 18:41:06 --> [Caused by] mysqli_sql_exception: Unknown column 'areaa.idArea' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `aparatos`.*, `tipo_aparatos`.`nombreTipo`, `areas`.`nombreArea`
+FROM `aparatos`
+LEFT JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`idTipo`
+LEFT JOIN `areas` ON `aparatos`.`area` = `areaa`.`idArea`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aparatos`.*, `tipo_aparatos`.`nombreTipo`, `areas`.`nombreArea`
+FROM `aparatos`
+LEFT JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`idTipo`
+LEFT JOIN `areas` ON `aparatos`.`area` = `areaa`.`idArea`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aparatos`.*, `tipo_aparatos`.`nombreTipo`, `areas`.`nombreArea`
+FROM `aparatos`
+LEFT JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`idTipo`
+LEFT JOIN `areas` ON `aparatos`.`area` = `areaa`.`idArea`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `aparatos`.*, `tipo_aparatos`.`nombreTipo`, `areas`.`nombreArea`
+FROM `aparatos`
+LEFT JOIN `tipo_aparatos` ON `aparatos`.`tipo` = `tipo_aparatos`.`idTipo`
+LEFT JOIN `areas` ON `aparatos`.`area` = `areaa`.`idArea`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Aparatos.php(29): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 18:50:46 --> ErrorException: Undefined property: CodeIgniter\View\View::$aparatosModel
+[Method: GET, Route: aparatos]
+in APPPATH\Views\aparatos.php on line 35.
+ 1 APPPATH\Views\aparatos.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$aparatosModel', 'C:\\xampp\\htdocs\\inventario\\app\\Views\\aparatos.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\aparatos.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('aparatos', [], true)
+ 5 APPPATH\Controllers\Aparatos.php(27): view('aparatos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-25 18:51:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 18:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 18:51:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-25 18:57:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Deletes are not allowed unless they contain a "where" or "like" clause.
+[Method: GET, Route: aparatos/delete/3]
+in SYSTEMPATH\Database\BaseBuilder.php on line 2814.
+ 1 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\Aparatos.php(149): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->delete(null)
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-25 19:00:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 19:00:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 19:00:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 19:02:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 19:02:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 19:02:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 19:03:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 19:05:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 19:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-25 19:06:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Deletes are not allowed unless they contain a "where" or "like" clause.
+[Method: GET, Route: aparatos/delete/1]
+in SYSTEMPATH\Database\BaseBuilder.php on line 2814.
+ 1 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\Aparatos.php(158): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->delete('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-25 19:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 19:08:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 19:08:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 19:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 19:08:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 19:08:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 19:08:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 19:09:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 19:09:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 19:09:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 19:09:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 19:15:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 19:15:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 19:21:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 19:21:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 19:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 19:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 19:23:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 19:23:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 19:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 19:24:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 19:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-25 19:56:13 --> BadMethodCallException: Call to undefined method App\Models\AreasModel::EmpleadosArea
+[Method: GET, Route: empleados]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Empleados.php(15): CodeIgniter\Model->__call('EmpleadosArea', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Empleados->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 19:57:36 --> BadMethodCallException: Call to undefined method App\Models\AreasModel::EmpleadosArea
+[Method: GET, Route: empleados]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Empleados.php(15): CodeIgniter\Model->__call('EmpleadosArea', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Empleados->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 19:57:38 --> BadMethodCallException: Call to undefined method App\Models\AreasModel::EmpleadosArea
+[Method: GET, Route: empleados]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Empleados.php(15): CodeIgniter\Model->__call('EmpleadosArea', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Empleados->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-25 19:59:41 --> ErrorException: Undefined array key "idEmpleado"
+[Method: GET, Route: empleados]
+in APPPATH\Views\empleados.php on line 23.
+ 1 APPPATH\Views\empleados.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idEmpleado"', 'C:\\xampp\\htdocs\\inventario\\app\\Views\\empleados.php', 23)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\empleados.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('empleados', [], true)
+ 5 APPPATH\Controllers\Empleados.php(16): view('empleados', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

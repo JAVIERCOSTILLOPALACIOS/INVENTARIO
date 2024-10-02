@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Estilos para botones */
+.button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none; /* Quitar subrayado */
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para las tablas */
+table {
+    width: 100%; /* Hacer la tabla más ancha */
+    border-collapse: collapse; /* Combina bordes */
+    margin: 20px 0; /* Margen vertical */
+    background-color: white; /* Fondo blanco */
+}
+
+th, td {
+    padding: 12px; /* Espaciado dentro de celdas */
+    text-align: left; /* Alineación a la izquierda */
+    border: 1px solid #ddd; /* Línea de borde */
+}
+
+th {
+    background-color: #007BFF; /* Color de fondo para encabezados */
+    color: white; /* Color de texto para encabezados */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Color al pasar el ratón */
+}
+
+
+/* APARATOS */
+.createAparato{
+    background: #0056b3;
+}

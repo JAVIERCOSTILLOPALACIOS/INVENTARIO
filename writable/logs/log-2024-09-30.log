@@ -1,0 +1,1652 @@
+CRITICAL - 2024-09-30 15:14:40 --> ErrorException: require_once(C:\xampp\htdocs\inventario\app\third_party/dompdf/autoload.inc.php): Failed to open stream: No such file or directory
+[Method: GET, Route: responsivas/create]
+in APPPATH\Controllers\Responsivas.php on line 11.
+ 1 APPPATH\Controllers\Responsivas.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:\\xampp\\htdocs\\inventario\\app\\third_party/dompdf/autoload.inc.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\inventario\\app\\Controllers\\Responsivas.php', 11)
+ 2 APPPATH\Controllers\Responsivas.php(11): require_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\inventario\\app\\Controllers\\Responsivas.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\inventario\\app\\Controllers\\Responsivas.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Responsivas')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Responsivas')
+ 7 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Responsivas', true)
+ 8 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 15:38:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 15:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 15:39:04 --> ErrorException: require_once(fpdf186/fpdf.php): Failed to open stream: No such file or directory
+[Method: POST, Route: responsivas/new]
+in APPPATH\Controllers\Responsivas.php on line 71.
+ 1 APPPATH\Controllers\Responsivas.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(fpdf186/fpdf.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\inventario\\app\\Controllers\\Responsivas.php', 71)
+ 2 APPPATH\Controllers\Responsivas.php(71): require_once()
+ 3 APPPATH\Controllers\Responsivas.php(64): App\Controllers\Responsivas->generatePdf(23)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->new()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 16:00:49 --> Error: Class "App\Libraries\PdfGenerator" not found
+[Method: GET, Route: responsivas]
+in APPPATH\Controllers\Responsivas.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Responsivas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 16:00:59 --> Error: Class "App\Libraries\PdfGenerator" not found
+[Method: GET, Route: responsivas]
+in APPPATH\Controllers\Responsivas.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Responsivas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 16:06:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 16:06:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 16:06:40 --> Error: Class "FPDF186\FPDF" not found
+[Method: POST, Route: responsivas/new]
+in APPPATH\Libraries\PdfGenerator.php on line 11.
+ 1 APPPATH\Controllers\Responsivas.php(73): App\Libraries\PdfGenerator->generatePdf([...])
+ 2 APPPATH\Controllers\Responsivas.php(62): App\Controllers\Responsivas->generatePdf(24)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->new()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 16:08:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 16:08:40 --> Error: Class "App\fpdf186\fpdf" not found
+[Method: POST, Route: responsivas/new]
+in APPPATH\Libraries\PdfGenerator.php on line 11.
+ 1 APPPATH\Controllers\Responsivas.php(73): App\Libraries\PdfGenerator->generatePdf([...])
+ 2 APPPATH\Controllers\Responsivas.php(62): App\Controllers\Responsivas->generatePdf(25)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->new()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 16:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 16:13:42 --> Error: Class "App\fpdf186\fpdf" not found
+[Method: POST, Route: responsivas/new]
+in APPPATH\Libraries\PdfGenerator.php on line 11.
+ 1 APPPATH\Controllers\Responsivas.php(73): App\Libraries\PdfGenerator->generatePdf([...])
+ 2 APPPATH\Controllers\Responsivas.php(62): App\Controllers\Responsivas->generatePdf(26)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->new()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 16:15:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 16:15:55 --> Error: Class "App\fpdf186\fpdf" not found
+[Method: POST, Route: responsivas/new]
+in APPPATH\Libraries\PdfGenerator.php on line 11.
+ 1 APPPATH\Controllers\Responsivas.php(73): App\Libraries\PdfGenerator->generatePdf([...])
+ 2 APPPATH\Controllers\Responsivas.php(62): App\Controllers\Responsivas->generatePdf(27)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->new()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 16:20:39 --> Error: Class "App\fpdf186\fpdf" not found
+[Method: POST, Route: responsivas/new]
+in APPPATH\Libraries\PdfGenerator.php on line 11.
+ 1 APPPATH\Controllers\Responsivas.php(73): App\Libraries\PdfGenerator->generatePdf([...])
+ 2 APPPATH\Controllers\Responsivas.php(62): App\Controllers\Responsivas->generatePdf(28)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->new()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 16:20:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 16:20:43 --> Error: Class "App\fpdf186\fpdf" not found
+[Method: POST, Route: responsivas/new]
+in APPPATH\Libraries\PdfGenerator.php on line 11.
+ 1 APPPATH\Controllers\Responsivas.php(73): App\Libraries\PdfGenerator->generatePdf([...])
+ 2 APPPATH\Controllers\Responsivas.php(62): App\Controllers\Responsivas->generatePdf(29)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->new()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 16:26:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 16:26:14 --> Error: Class "App\Libraries\fpdf" not found
+[Method: POST, Route: responsivas/new]
+in APPPATH\Libraries\PdfGenerator.php on line 11.
+ 1 APPPATH\Controllers\Responsivas.php(73): App\Libraries\PdfGenerator->generatePdf([...])
+ 2 APPPATH\Controllers\Responsivas.php(62): App\Controllers\Responsivas->generatePdf(30)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->new()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 16:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 16:26:33 --> Error: Class "App\Libraries\fpdf" not found
+[Method: POST, Route: responsivas/new]
+in APPPATH\Libraries\PdfGenerator.php on line 11.
+ 1 APPPATH\Controllers\Responsivas.php(73): App\Libraries\PdfGenerator->generatePdf([...])
+ 2 APPPATH\Controllers\Responsivas.php(62): App\Controllers\Responsivas->generatePdf(31)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->new()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 16:31:18 --> ErrorException: require_once(App\fpdf186\fpdf): Failed to open stream: No such file or directory
+[Method: POST, Route: responsivas/new]
+in APPPATH\Libraries\PdfGenerator.php on line 6.
+ 1 APPPATH\Libraries\PdfGenerator.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(App\\fpdf186\\fpdf): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\inventario\\app\\Libraries\\PdfGenerator.php', 6)
+ 2 APPPATH\Libraries\PdfGenerator.php(6): require_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\inventario\\app\\Libraries\\PdfGenerator.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\inventario\\app\\Libraries\\PdfGenerator.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\PdfGenerator')
+ 6 APPPATH\Controllers\Responsivas.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\PdfGenerator')
+ 7 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Responsivas->__construct()
+ 8 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 16:31:36 --> ErrorException: require_once(fpdf186\fpdf): Failed to open stream: No such file or directory
+[Method: POST, Route: responsivas/new]
+in APPPATH\Libraries\PdfGenerator.php on line 6.
+ 1 APPPATH\Libraries\PdfGenerator.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(fpdf186\\fpdf): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\inventario\\app\\Libraries\\PdfGenerator.php', 6)
+ 2 APPPATH\Libraries\PdfGenerator.php(6): require_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\inventario\\app\\Libraries\\PdfGenerator.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\inventario\\app\\Libraries\\PdfGenerator.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\PdfGenerator')
+ 6 APPPATH\Controllers\Responsivas.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\PdfGenerator')
+ 7 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Responsivas->__construct()
+ 8 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 16:37:58 --> ErrorException: require_once(fpdf186\fpdf): Failed to open stream: No such file or directory
+[Method: POST, Route: responsivas/new]
+in APPPATH\Libraries\PdfGenerator.php on line 6.
+ 1 APPPATH\Libraries\PdfGenerator.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(fpdf186\\fpdf): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\inventario\\app\\Libraries\\PdfGenerator.php', 6)
+ 2 APPPATH\Libraries\PdfGenerator.php(6): require_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\xampp\\htdocs\\inventario\\app\\Libraries\\PdfGenerator.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\inventario\\app\\Libraries\\PdfGenerator.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\PdfGenerator')
+ 6 APPPATH\Controllers\Responsivas.php(23): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\PdfGenerator')
+ 7 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Responsivas->__construct()
+ 8 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 16:43:31 --> Error: Class "App\Libraries\PdfGenerator" not found
+[Method: POST, Route: responsivas/new]
+in APPPATH\Controllers\Responsivas.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Responsivas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 16:44:40 --> Error: Class "App\fpdf186\fpdf\fpdf" not found
+[Method: POST, Route: responsivas/new]
+in APPPATH\Libraries\PdfGenerator.php on line 16.
+ 1 APPPATH\Controllers\Responsivas.php(73): App\Libraries\PdfGenerator->generatePdf([...])
+ 2 APPPATH\Controllers\Responsivas.php(62): App\Controllers\Responsivas->generatePdf(32)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->new()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 16:50:54 --> Error: Class "Mpdf\Mpdf" not found
+[Method: POST, Route: responsivas/new]
+in APPPATH\Libraries\PdfGenerator.php on line 11.
+ 1 APPPATH\Controllers\Responsivas.php(77): App\Libraries\PdfGenerator->generatePdf([...])
+ 2 APPPATH\Controllers\Responsivas.php(62): App\Controllers\Responsivas->generatePdf(33)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->new()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 16:50:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 16:50:57 --> Error: Class "Mpdf\Mpdf" not found
+[Method: POST, Route: responsivas/new]
+in APPPATH\Libraries\PdfGenerator.php on line 11.
+ 1 APPPATH\Controllers\Responsivas.php(77): App\Libraries\PdfGenerator->generatePdf([...])
+ 2 APPPATH\Controllers\Responsivas.php(62): App\Controllers\Responsivas->generatePdf(34)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->new()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 16:53:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 16:53:35 --> Error: Class "Mpdf\Mpdf" not found
+[Method: POST, Route: responsivas/new]
+in APPPATH\Libraries\PdfGenerator.php on line 11.
+ 1 APPPATH\Controllers\Responsivas.php(77): App\Libraries\PdfGenerator->generatePdf([...])
+ 2 APPPATH\Controllers\Responsivas.php(62): App\Controllers\Responsivas->generatePdf(35)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->new()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 16:57:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:09:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 17:10:52 --> TypeError: CodeIgniter\HTTP\DownloadResponse::setBinary(): Argument #1 ($binary) must be of type string, CodeIgniter\HTTP\Response given, called in C:\xampp\htdocs\inventario\system\HTTP\ResponseTrait.php on line 741
+[Method: GET, Route: responsivas/download/16]
+in SYSTEMPATH\HTTP\DownloadResponse.php on line 86.
+ 1 SYSTEMPATH\HTTP\ResponseTrait.php(741): CodeIgniter\HTTP\DownloadResponse->setBinary(Object(CodeIgniter\HTTP\Response))
+ 2 APPPATH\Controllers\Responsivas.php(127): CodeIgniter\HTTP\Response->download('responsiva_16.pdf', Object(CodeIgniter\HTTP\Response))
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('16')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 17:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:10:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:10:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:11:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 17:11:30 --> TypeError: CodeIgniter\HTTP\DownloadResponse::setBinary(): Argument #1 ($binary) must be of type string, CodeIgniter\HTTP\Response given, called in C:\xampp\htdocs\inventario\system\HTTP\ResponseTrait.php on line 741
+[Method: GET, Route: responsivas/download/1]
+in SYSTEMPATH\HTTP\DownloadResponse.php on line 86.
+ 1 SYSTEMPATH\HTTP\ResponseTrait.php(741): CodeIgniter\HTTP\DownloadResponse->setBinary(Object(CodeIgniter\HTTP\Response))
+ 2 APPPATH\Controllers\Responsivas.php(127): CodeIgniter\HTTP\Response->download('responsiva_1.pdf', Object(CodeIgniter\HTTP\Response))
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('1')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 17:11:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 17:11:33 --> TypeError: CodeIgniter\HTTP\DownloadResponse::setBinary(): Argument #1 ($binary) must be of type string, CodeIgniter\HTTP\Response given, called in C:\xampp\htdocs\inventario\system\HTTP\ResponseTrait.php on line 741
+[Method: GET, Route: responsivas/download/8]
+in SYSTEMPATH\HTTP\DownloadResponse.php on line 86.
+ 1 SYSTEMPATH\HTTP\ResponseTrait.php(741): CodeIgniter\HTTP\DownloadResponse->setBinary(Object(CodeIgniter\HTTP\Response))
+ 2 APPPATH\Controllers\Responsivas.php(127): CodeIgniter\HTTP\Response->download('responsiva_8.pdf', Object(CodeIgniter\HTTP\Response))
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('8')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 17:15:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 17:15:14 --> TypeError: CodeIgniter\HTTP\DownloadResponse::setBinary(): Argument #1 ($binary) must be of type string, CodeIgniter\HTTP\Response given, called in C:\xampp\htdocs\inventario\system\HTTP\ResponseTrait.php on line 741
+[Method: GET, Route: responsivas/download/1]
+in SYSTEMPATH\HTTP\DownloadResponse.php on line 86.
+ 1 SYSTEMPATH\HTTP\ResponseTrait.php(741): CodeIgniter\HTTP\DownloadResponse->setBinary(Object(CodeIgniter\HTTP\Response))
+ 2 APPPATH\Controllers\Responsivas.php(127): CodeIgniter\HTTP\Response->download('responsiva_1.pdf', Object(CodeIgniter\HTTP\Response))
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('1')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 17:17:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:19:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:22:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:24:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:26:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:27:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:27:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:27:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:28:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:31:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 17:31:26 --> ErrorException: Undefined variable $pdf
+[Method: GET, Route: responsivas/download/12]
+in APPPATH\Controllers\Responsivas.php on line 149.
+ 1 APPPATH\Controllers\Responsivas.php(149): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pdf', 'C:\\xampp\\htdocs\\inventario\\app\\Controllers\\Responsivas.php', 149)
+ 2 APPPATH\Controllers\Responsivas.php(92): App\Controllers\Responsivas->createValidPdf([...])
+ 3 APPPATH\Controllers\Responsivas.php(182): App\Controllers\Responsivas->generatePdf('12')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('12')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 17:31:27 --> ErrorException: Undefined variable $pdf
+[Method: GET, Route: responsivas/download/12]
+in APPPATH\Controllers\Responsivas.php on line 149.
+ 1 APPPATH\Controllers\Responsivas.php(149): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pdf', 'C:\\xampp\\htdocs\\inventario\\app\\Controllers\\Responsivas.php', 149)
+ 2 APPPATH\Controllers\Responsivas.php(92): App\Controllers\Responsivas->createValidPdf([...])
+ 3 APPPATH\Controllers\Responsivas.php(182): App\Controllers\Responsivas->generatePdf('12')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('12')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 17:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:33:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:34:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:35:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:35:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:35:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:36:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 17:36:38 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: responsivas/download/11]
+in APPPATH\Controllers\Responsivas.php on line 160.
+ 1 APPPATH\Controllers\Responsivas.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\inventario\\app\\Controllers\\Responsivas.php', 160)
+ 2 APPPATH\Controllers\Responsivas.php(123): App\Controllers\Responsivas->generateStream('ID Responsiva: 11 .
+Empleado: 5.
+Aparato: 13.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: N/A.
+', 15)
+ 3 APPPATH\Controllers\Responsivas.php(91): App\Controllers\Responsivas->createValidPdf('ID Responsiva: 11 .
+Empleado: 5.
+Aparato: 13.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: N/A.
+')
+ 4 APPPATH\Controllers\Responsivas.php(181): App\Controllers\Responsivas->generatePdf('11')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('11')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 17:36:39 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: responsivas/download/11]
+in APPPATH\Controllers\Responsivas.php on line 160.
+ 1 APPPATH\Controllers\Responsivas.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\inventario\\app\\Controllers\\Responsivas.php', 160)
+ 2 APPPATH\Controllers\Responsivas.php(123): App\Controllers\Responsivas->generateStream('ID Responsiva: 11 .
+Empleado: 5.
+Aparato: 13.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: N/A.
+', 15)
+ 3 APPPATH\Controllers\Responsivas.php(91): App\Controllers\Responsivas->createValidPdf('ID Responsiva: 11 .
+Empleado: 5.
+Aparato: 13.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: N/A.
+')
+ 4 APPPATH\Controllers\Responsivas.php(181): App\Controllers\Responsivas->generatePdf('11')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('11')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 17:36:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 17:40:21 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: responsivas/download/11]
+in APPPATH\Controllers\Responsivas.php on line 160.
+ 1 APPPATH\Controllers\Responsivas.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\inventario\\app\\Controllers\\Responsivas.php', 160)
+ 2 APPPATH\Controllers\Responsivas.php(123): App\Controllers\Responsivas->generateStream('ID Responsiva: 11 .
+Empleado: 5.
+Aparato: 13.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: N/A.
+', 15)
+ 3 APPPATH\Controllers\Responsivas.php(91): App\Controllers\Responsivas->createValidPdf('ID Responsiva: 11 .
+Empleado: 5.
+Aparato: 13.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: N/A.
+')
+ 4 APPPATH\Controllers\Responsivas.php(181): App\Controllers\Responsivas->generatePdf('11')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('11')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 17:40:23 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: responsivas/download/11]
+in APPPATH\Controllers\Responsivas.php on line 160.
+ 1 APPPATH\Controllers\Responsivas.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\inventario\\app\\Controllers\\Responsivas.php', 160)
+ 2 APPPATH\Controllers\Responsivas.php(123): App\Controllers\Responsivas->generateStream('ID Responsiva: 11 .
+Empleado: 5.
+Aparato: 13.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: N/A.
+', 15)
+ 3 APPPATH\Controllers\Responsivas.php(91): App\Controllers\Responsivas->createValidPdf('ID Responsiva: 11 .
+Empleado: 5.
+Aparato: 13.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: N/A.
+')
+ 4 APPPATH\Controllers\Responsivas.php(181): App\Controllers\Responsivas->generatePdf('11')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('11')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 17:40:28 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: responsivas/download/11]
+in APPPATH\Controllers\Responsivas.php on line 160.
+ 1 APPPATH\Controllers\Responsivas.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\inventario\\app\\Controllers\\Responsivas.php', 160)
+ 2 APPPATH\Controllers\Responsivas.php(123): App\Controllers\Responsivas->generateStream('ID Responsiva: 11 .
+Empleado: 5.
+Aparato: 13.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: N/A.
+', 15)
+ 3 APPPATH\Controllers\Responsivas.php(91): App\Controllers\Responsivas->createValidPdf('ID Responsiva: 11 .
+Empleado: 5.
+Aparato: 13.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: N/A.
+')
+ 4 APPPATH\Controllers\Responsivas.php(181): App\Controllers\Responsivas->generatePdf('11')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('11')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 17:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:48:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:51:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 17:51:46 --> ErrorException: Undefined array key "idResponsiva"
+[Method: GET, Route: responsivas/download/1]
+in APPPATH\Controllers\Responsivas.php on line 163.
+ 1 APPPATH\Controllers\Responsivas.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idResponsiva"', 'C:\\xampp\\htdocs\\inventario\\app\\Controllers\\Responsivas.php', 163)
+ 2 APPPATH\Controllers\Responsivas.php(124): App\Controllers\Responsivas->generateStream([...], 15)
+ 3 APPPATH\Controllers\Responsivas.php(92): App\Controllers\Responsivas->createValidPdf([...])
+ 4 APPPATH\Controllers\Responsivas.php(191): App\Controllers\Responsivas->generatePdf('1')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('1')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 17:51:47 --> ErrorException: Undefined array key "idResponsiva"
+[Method: GET, Route: responsivas/download/1]
+in APPPATH\Controllers\Responsivas.php on line 163.
+ 1 APPPATH\Controllers\Responsivas.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idResponsiva"', 'C:\\xampp\\htdocs\\inventario\\app\\Controllers\\Responsivas.php', 163)
+ 2 APPPATH\Controllers\Responsivas.php(124): App\Controllers\Responsivas->generateStream([...], 15)
+ 3 APPPATH\Controllers\Responsivas.php(92): App\Controllers\Responsivas->createValidPdf([...])
+ 4 APPPATH\Controllers\Responsivas.php(191): App\Controllers\Responsivas->generatePdf('1')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('1')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 17:51:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 17:51:50 --> ErrorException: Undefined array key "idResponsiva"
+[Method: GET, Route: responsivas/download/2]
+in APPPATH\Controllers\Responsivas.php on line 163.
+ 1 APPPATH\Controllers\Responsivas.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idResponsiva"', 'C:\\xampp\\htdocs\\inventario\\app\\Controllers\\Responsivas.php', 163)
+ 2 APPPATH\Controllers\Responsivas.php(124): App\Controllers\Responsivas->generateStream([...], 15)
+ 3 APPPATH\Controllers\Responsivas.php(92): App\Controllers\Responsivas->createValidPdf([...])
+ 4 APPPATH\Controllers\Responsivas.php(191): App\Controllers\Responsivas->generatePdf('2')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('2')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 17:51:51 --> ErrorException: Undefined array key "idResponsiva"
+[Method: GET, Route: responsivas/download/2]
+in APPPATH\Controllers\Responsivas.php on line 163.
+ 1 APPPATH\Controllers\Responsivas.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idResponsiva"', 'C:\\xampp\\htdocs\\inventario\\app\\Controllers\\Responsivas.php', 163)
+ 2 APPPATH\Controllers\Responsivas.php(124): App\Controllers\Responsivas->generateStream([...], 15)
+ 3 APPPATH\Controllers\Responsivas.php(92): App\Controllers\Responsivas->createValidPdf([...])
+ 4 APPPATH\Controllers\Responsivas.php(191): App\Controllers\Responsivas->generatePdf('2')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('2')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 17:51:56 --> ErrorException: Undefined array key "idResponsiva"
+[Method: GET, Route: responsivas/download/2]
+in APPPATH\Controllers\Responsivas.php on line 163.
+ 1 APPPATH\Controllers\Responsivas.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idResponsiva"', 'C:\\xampp\\htdocs\\inventario\\app\\Controllers\\Responsivas.php', 163)
+ 2 APPPATH\Controllers\Responsivas.php(124): App\Controllers\Responsivas->generateStream([...], 15)
+ 3 APPPATH\Controllers\Responsivas.php(92): App\Controllers\Responsivas->createValidPdf([...])
+ 4 APPPATH\Controllers\Responsivas.php(191): App\Controllers\Responsivas->generatePdf('2')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('2')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 17:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:54:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 17:54:19 --> ErrorException: Undefined variable $x
+[Method: GET, Route: responsivas/download/1]
+in APPPATH\Controllers\Responsivas.php on line 168.
+ 1 APPPATH\Controllers\Responsivas.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $x', 'C:\\xampp\\htdocs\\inventario\\app\\Controllers\\Responsivas.php', 168)
+ 2 APPPATH\Controllers\Responsivas.php(103): App\Controllers\Responsivas->generateStream('ID Responsiva: 1.
+Empleado: 1.
+Aparato: 7.
+Fecha de Inicio: 2024-09-26.
+Fecha de Fin: 2024-09-26.
+', 15)
+ 3 APPPATH\Controllers\Responsivas.php(91): App\Controllers\Responsivas->createValidPdf('ID Responsiva: 1.
+Empleado: 1.
+Aparato: 7.
+Fecha de Inicio: 2024-09-26.
+Fecha de Fin: 2024-09-26.
+')
+ 4 APPPATH\Controllers\Responsivas.php(188): App\Controllers\Responsivas->generatePdf('1')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('1')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 17:54:20 --> ErrorException: Undefined variable $x
+[Method: GET, Route: responsivas/download/1]
+in APPPATH\Controllers\Responsivas.php on line 168.
+ 1 APPPATH\Controllers\Responsivas.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $x', 'C:\\xampp\\htdocs\\inventario\\app\\Controllers\\Responsivas.php', 168)
+ 2 APPPATH\Controllers\Responsivas.php(103): App\Controllers\Responsivas->generateStream('ID Responsiva: 1.
+Empleado: 1.
+Aparato: 7.
+Fecha de Inicio: 2024-09-26.
+Fecha de Fin: 2024-09-26.
+', 15)
+ 3 APPPATH\Controllers\Responsivas.php(91): App\Controllers\Responsivas->createValidPdf('ID Responsiva: 1.
+Empleado: 1.
+Aparato: 7.
+Fecha de Inicio: 2024-09-26.
+Fecha de Fin: 2024-09-26.
+')
+ 4 APPPATH\Controllers\Responsivas.php(188): App\Controllers\Responsivas->generatePdf('1')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('1')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 17:54:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 17:54:23 --> ErrorException: Undefined variable $x
+[Method: GET, Route: responsivas/download/5]
+in APPPATH\Controllers\Responsivas.php on line 168.
+ 1 APPPATH\Controllers\Responsivas.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $x', 'C:\\xampp\\htdocs\\inventario\\app\\Controllers\\Responsivas.php', 168)
+ 2 APPPATH\Controllers\Responsivas.php(103): App\Controllers\Responsivas->generateStream('ID Responsiva: 5.
+Empleado: 1.
+Aparato: 15.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: 2024-09-27.
+', 15)
+ 3 APPPATH\Controllers\Responsivas.php(91): App\Controllers\Responsivas->createValidPdf('ID Responsiva: 5.
+Empleado: 1.
+Aparato: 15.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: 2024-09-27.
+')
+ 4 APPPATH\Controllers\Responsivas.php(188): App\Controllers\Responsivas->generatePdf('5')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('5')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 17:54:25 --> ErrorException: Undefined variable $x
+[Method: GET, Route: responsivas/download/5]
+in APPPATH\Controllers\Responsivas.php on line 168.
+ 1 APPPATH\Controllers\Responsivas.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $x', 'C:\\xampp\\htdocs\\inventario\\app\\Controllers\\Responsivas.php', 168)
+ 2 APPPATH\Controllers\Responsivas.php(103): App\Controllers\Responsivas->generateStream('ID Responsiva: 5.
+Empleado: 1.
+Aparato: 15.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: 2024-09-27.
+', 15)
+ 3 APPPATH\Controllers\Responsivas.php(91): App\Controllers\Responsivas->createValidPdf('ID Responsiva: 5.
+Empleado: 1.
+Aparato: 15.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: 2024-09-27.
+')
+ 4 APPPATH\Controllers\Responsivas.php(188): App\Controllers\Responsivas->generatePdf('5')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('5')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 17:54:30 --> ErrorException: Undefined variable $x
+[Method: GET, Route: responsivas/download/5]
+in APPPATH\Controllers\Responsivas.php on line 168.
+ 1 APPPATH\Controllers\Responsivas.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $x', 'C:\\xampp\\htdocs\\inventario\\app\\Controllers\\Responsivas.php', 168)
+ 2 APPPATH\Controllers\Responsivas.php(103): App\Controllers\Responsivas->generateStream('ID Responsiva: 5.
+Empleado: 1.
+Aparato: 15.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: 2024-09-27.
+', 15)
+ 3 APPPATH\Controllers\Responsivas.php(91): App\Controllers\Responsivas->createValidPdf('ID Responsiva: 5.
+Empleado: 1.
+Aparato: 15.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: 2024-09-27.
+')
+ 4 APPPATH\Controllers\Responsivas.php(188): App\Controllers\Responsivas->generatePdf('5')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('5')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 17:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:57:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 17:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 18:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 18:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 18:13:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 18:15:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 18:15:39 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: responsivas/download/5]
+in APPPATH\Controllers\Responsivas.php on line 168.
+ 1 APPPATH\Controllers\Responsivas.php(103): App\Controllers\Responsivas->generateStream('ID Responsiva: 5.
+Empleado: 1.
+Aparato: 15.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: 2024-09-27.
+', 15)
+ 2 APPPATH\Controllers\Responsivas.php(91): App\Controllers\Responsivas->createValidPdf('ID Responsiva: 5.
+Empleado: 1.
+Aparato: 15.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: 2024-09-27.
+')
+ 3 APPPATH\Controllers\Responsivas.php(189): App\Controllers\Responsivas->generatePdf('5')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('5')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 18:15:40 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: responsivas/download/5]
+in APPPATH\Controllers\Responsivas.php on line 168.
+ 1 APPPATH\Controllers\Responsivas.php(103): App\Controllers\Responsivas->generateStream('ID Responsiva: 5.
+Empleado: 1.
+Aparato: 15.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: 2024-09-27.
+', 15)
+ 2 APPPATH\Controllers\Responsivas.php(91): App\Controllers\Responsivas->createValidPdf('ID Responsiva: 5.
+Empleado: 1.
+Aparato: 15.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: 2024-09-27.
+')
+ 3 APPPATH\Controllers\Responsivas.php(189): App\Controllers\Responsivas->generatePdf('5')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('5')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 18:15:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 18:18:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 18:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 18:20:19 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given
+[Method: GET, Route: responsivas/download/2]
+in APPPATH\Controllers\Responsivas.php on line 166.
+ 1 APPPATH\Controllers\Responsivas.php(166): count('ID Responsiva: 2.
+Empleado: 1.
+Aparato: 8.
+Fecha de Inicio: 2024-09-26.
+Fecha de Fin: 2024-09-26.
+')
+ 2 APPPATH\Controllers\Responsivas.php(103): App\Controllers\Responsivas->generateStream('ID Responsiva: 2.
+Empleado: 1.
+Aparato: 8.
+Fecha de Inicio: 2024-09-26.
+Fecha de Fin: 2024-09-26.
+', 15)
+ 3 APPPATH\Controllers\Responsivas.php(91): App\Controllers\Responsivas->createValidPdf('ID Responsiva: 2.
+Empleado: 1.
+Aparato: 8.
+Fecha de Inicio: 2024-09-26.
+Fecha de Fin: 2024-09-26.
+')
+ 4 APPPATH\Controllers\Responsivas.php(189): App\Controllers\Responsivas->generatePdf('2')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('2')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 18:20:20 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given
+[Method: GET, Route: responsivas/download/2]
+in APPPATH\Controllers\Responsivas.php on line 166.
+ 1 APPPATH\Controllers\Responsivas.php(166): count('ID Responsiva: 2.
+Empleado: 1.
+Aparato: 8.
+Fecha de Inicio: 2024-09-26.
+Fecha de Fin: 2024-09-26.
+')
+ 2 APPPATH\Controllers\Responsivas.php(103): App\Controllers\Responsivas->generateStream('ID Responsiva: 2.
+Empleado: 1.
+Aparato: 8.
+Fecha de Inicio: 2024-09-26.
+Fecha de Fin: 2024-09-26.
+', 15)
+ 3 APPPATH\Controllers\Responsivas.php(91): App\Controllers\Responsivas->createValidPdf('ID Responsiva: 2.
+Empleado: 1.
+Aparato: 8.
+Fecha de Inicio: 2024-09-26.
+Fecha de Fin: 2024-09-26.
+')
+ 4 APPPATH\Controllers\Responsivas.php(189): App\Controllers\Responsivas->generatePdf('2')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('2')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 18:20:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 18:20:22 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given
+[Method: GET, Route: responsivas/download/3]
+in APPPATH\Controllers\Responsivas.php on line 166.
+ 1 APPPATH\Controllers\Responsivas.php(166): count('ID Responsiva: 3.
+Empleado: 5.
+Aparato: 9.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: 2024-09-27.
+')
+ 2 APPPATH\Controllers\Responsivas.php(103): App\Controllers\Responsivas->generateStream('ID Responsiva: 3.
+Empleado: 5.
+Aparato: 9.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: 2024-09-27.
+', 15)
+ 3 APPPATH\Controllers\Responsivas.php(91): App\Controllers\Responsivas->createValidPdf('ID Responsiva: 3.
+Empleado: 5.
+Aparato: 9.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: 2024-09-27.
+')
+ 4 APPPATH\Controllers\Responsivas.php(189): App\Controllers\Responsivas->generatePdf('3')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('3')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 18:20:23 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given
+[Method: GET, Route: responsivas/download/3]
+in APPPATH\Controllers\Responsivas.php on line 166.
+ 1 APPPATH\Controllers\Responsivas.php(166): count('ID Responsiva: 3.
+Empleado: 5.
+Aparato: 9.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: 2024-09-27.
+')
+ 2 APPPATH\Controllers\Responsivas.php(103): App\Controllers\Responsivas->generateStream('ID Responsiva: 3.
+Empleado: 5.
+Aparato: 9.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: 2024-09-27.
+', 15)
+ 3 APPPATH\Controllers\Responsivas.php(91): App\Controllers\Responsivas->createValidPdf('ID Responsiva: 3.
+Empleado: 5.
+Aparato: 9.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: 2024-09-27.
+')
+ 4 APPPATH\Controllers\Responsivas.php(189): App\Controllers\Responsivas->generatePdf('3')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('3')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 18:20:29 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given
+[Method: GET, Route: responsivas/download/3]
+in APPPATH\Controllers\Responsivas.php on line 166.
+ 1 APPPATH\Controllers\Responsivas.php(166): count('ID Responsiva: 3.
+Empleado: 5.
+Aparato: 9.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: 2024-09-27.
+')
+ 2 APPPATH\Controllers\Responsivas.php(103): App\Controllers\Responsivas->generateStream('ID Responsiva: 3.
+Empleado: 5.
+Aparato: 9.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: 2024-09-27.
+', 15)
+ 3 APPPATH\Controllers\Responsivas.php(91): App\Controllers\Responsivas->createValidPdf('ID Responsiva: 3.
+Empleado: 5.
+Aparato: 9.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: 2024-09-27.
+')
+ 4 APPPATH\Controllers\Responsivas.php(189): App\Controllers\Responsivas->generatePdf('3')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('3')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 18:20:59 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given
+[Method: GET, Route: responsivas/download/3]
+in APPPATH\Controllers\Responsivas.php on line 166.
+ 1 APPPATH\Controllers\Responsivas.php(166): count('ID Responsiva: 3.
+Empleado: 5.
+Aparato: 9.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: 2024-09-27.
+')
+ 2 APPPATH\Controllers\Responsivas.php(103): App\Controllers\Responsivas->generateStream('ID Responsiva: 3.
+Empleado: 5.
+Aparato: 9.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: 2024-09-27.
+', 15)
+ 3 APPPATH\Controllers\Responsivas.php(91): App\Controllers\Responsivas->createValidPdf('ID Responsiva: 3.
+Empleado: 5.
+Aparato: 9.
+Fecha de Inicio: 2024-09-27.
+Fecha de Fin: 2024-09-27.
+')
+ 4 APPPATH\Controllers\Responsivas.php(189): App\Controllers\Responsivas->generatePdf('3')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('3')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 18:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 18:22:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 18:23:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 18:23:08 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given
+[Method: GET, Route: responsivas/download/2]
+in APPPATH\Controllers\Responsivas.php on line 167.
+ 1 APPPATH\Controllers\Responsivas.php(167): count('ID Responsiva: 2.
+Empleado: 1.
+Aparato: 8.
+Fecha de Inicio: 2024-09-26.
+Fecha de Fin: 2024-09-26.
+')
+ 2 APPPATH\Controllers\Responsivas.php(103): App\Controllers\Responsivas->generateStream('ID Responsiva: 2.
+Empleado: 1.
+Aparato: 8.
+Fecha de Inicio: 2024-09-26.
+Fecha de Fin: 2024-09-26.
+', 15)
+ 3 APPPATH\Controllers\Responsivas.php(91): App\Controllers\Responsivas->createValidPdf('ID Responsiva: 2.
+Empleado: 1.
+Aparato: 8.
+Fecha de Inicio: 2024-09-26.
+Fecha de Fin: 2024-09-26.
+')
+ 4 APPPATH\Controllers\Responsivas.php(190): App\Controllers\Responsivas->generatePdf('2')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('2')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 18:23:10 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given
+[Method: GET, Route: responsivas/download/2]
+in APPPATH\Controllers\Responsivas.php on line 167.
+ 1 APPPATH\Controllers\Responsivas.php(167): count('ID Responsiva: 2.
+Empleado: 1.
+Aparato: 8.
+Fecha de Inicio: 2024-09-26.
+Fecha de Fin: 2024-09-26.
+')
+ 2 APPPATH\Controllers\Responsivas.php(103): App\Controllers\Responsivas->generateStream('ID Responsiva: 2.
+Empleado: 1.
+Aparato: 8.
+Fecha de Inicio: 2024-09-26.
+Fecha de Fin: 2024-09-26.
+', 15)
+ 3 APPPATH\Controllers\Responsivas.php(91): App\Controllers\Responsivas->createValidPdf('ID Responsiva: 2.
+Empleado: 1.
+Aparato: 8.
+Fecha de Inicio: 2024-09-26.
+Fecha de Fin: 2024-09-26.
+')
+ 4 APPPATH\Controllers\Responsivas.php(190): App\Controllers\Responsivas->generatePdf('2')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('2')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 18:23:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 18:23:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 18:24:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 18:25:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 18:25:20 --> ValueError: explode(): Argument #1 ($separator) cannot be empty
+[Method: GET, Route: responsivas/download/2]
+in APPPATH\Controllers\Responsivas.php on line 103.
+ 1 APPPATH\Controllers\Responsivas.php(103): explode('', 'ID Responsiva: 2.
+Empleado: 1.
+Aparato: 8.
+Fecha de Inicio: 2024-09-26.
+Fecha de Fin: 2024-09-26.
+')
+ 2 APPPATH\Controllers\Responsivas.php(91): App\Controllers\Responsivas->createValidPdf('ID Responsiva: 2.
+Empleado: 1.
+Aparato: 8.
+Fecha de Inicio: 2024-09-26.
+Fecha de Fin: 2024-09-26.
+')
+ 3 APPPATH\Controllers\Responsivas.php(190): App\Controllers\Responsivas->generatePdf('2')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('2')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 18:25:21 --> ValueError: explode(): Argument #1 ($separator) cannot be empty
+[Method: GET, Route: responsivas/download/2]
+in APPPATH\Controllers\Responsivas.php on line 103.
+ 1 APPPATH\Controllers\Responsivas.php(103): explode('', 'ID Responsiva: 2.
+Empleado: 1.
+Aparato: 8.
+Fecha de Inicio: 2024-09-26.
+Fecha de Fin: 2024-09-26.
+')
+ 2 APPPATH\Controllers\Responsivas.php(91): App\Controllers\Responsivas->createValidPdf('ID Responsiva: 2.
+Empleado: 1.
+Aparato: 8.
+Fecha de Inicio: 2024-09-26.
+Fecha de Fin: 2024-09-26.
+')
+ 3 APPPATH\Controllers\Responsivas.php(190): App\Controllers\Responsivas->generatePdf('2')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('2')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 18:25:26 --> ValueError: explode(): Argument #1 ($separator) cannot be empty
+[Method: GET, Route: responsivas/download/2]
+in APPPATH\Controllers\Responsivas.php on line 103.
+ 1 APPPATH\Controllers\Responsivas.php(103): explode('', 'ID Responsiva: 2.
+Empleado: 1.
+Aparato: 8.
+Fecha de Inicio: 2024-09-26.
+Fecha de Fin: 2024-09-26.
+')
+ 2 APPPATH\Controllers\Responsivas.php(91): App\Controllers\Responsivas->createValidPdf('ID Responsiva: 2.
+Empleado: 1.
+Aparato: 8.
+Fecha de Inicio: 2024-09-26.
+Fecha de Fin: 2024-09-26.
+')
+ 3 APPPATH\Controllers\Responsivas.php(190): App\Controllers\Responsivas->generatePdf('2')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('2')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 18:26:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 18:26:57 --> ValueError: explode(): Argument #1 ($separator) cannot be empty
+[Method: GET, Route: responsivas/download/1]
+in APPPATH\Controllers\Responsivas.php on line 103.
+ 1 APPPATH\Controllers\Responsivas.php(103): explode('', 'ID Responsiva: 1.
+Empleado: 1.
+Aparato: 7.
+Fecha de Inicio: 2024-09-26.
+Fecha de Fin: 2024-09-26.
+')
+ 2 APPPATH\Controllers\Responsivas.php(91): App\Controllers\Responsivas->createValidPdf('ID Responsiva: 1.
+Empleado: 1.
+Aparato: 7.
+Fecha de Inicio: 2024-09-26.
+Fecha de Fin: 2024-09-26.
+')
+ 3 APPPATH\Controllers\Responsivas.php(190): App\Controllers\Responsivas->generatePdf('1')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 18:26:58 --> ValueError: explode(): Argument #1 ($separator) cannot be empty
+[Method: GET, Route: responsivas/download/1]
+in APPPATH\Controllers\Responsivas.php on line 103.
+ 1 APPPATH\Controllers\Responsivas.php(103): explode('', 'ID Responsiva: 1.
+Empleado: 1.
+Aparato: 7.
+Fecha de Inicio: 2024-09-26.
+Fecha de Fin: 2024-09-26.
+')
+ 2 APPPATH\Controllers\Responsivas.php(91): App\Controllers\Responsivas->createValidPdf('ID Responsiva: 1.
+Empleado: 1.
+Aparato: 7.
+Fecha de Inicio: 2024-09-26.
+Fecha de Fin: 2024-09-26.
+')
+ 3 APPPATH\Controllers\Responsivas.php(190): App\Controllers\Responsivas->generatePdf('1')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->download('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 18:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 18:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 18:32:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 18:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 18:34:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 18:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 18:47:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 18:49:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 18:50:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 18:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 18:53:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 18:53:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 18:53:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 18:54:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 18:58:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 18:58:39 --> ErrorException: Undefined variable $db
+[Method: GET, Route: responsivas]
+in APPPATH\Views\responsivas.php on line 72.
+ 1 APPPATH\Views\responsivas.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\xampp\\htdocs\\inventario\\app\\Views\\responsivas.php', 72)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\responsivas.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('responsivas', [], true)
+ 5 APPPATH\Controllers\Responsivas.php(30): view('responsivas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 19:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-30 19:00:16 --> mysqli_sql_exception: Unknown column 'nombreEmpleado' in 'field list' in C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT nombreEm...', 0)
+#1 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT nombreEm...')
+#2 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT nombreEm...')
+#3 C:\xampp\htdocs\inventario\app\Views\responsivas.php(76): CodeIgniter\Database\BaseConnection->query('SELECT nombreEm...', Array)
+#4 C:\xampp\htdocs\inventario\system\View\View.php(234): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\inventario\system\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\xampp\htdocs\inventario\system\Common.php(1171): CodeIgniter\View\View->render('responsivas', Array, true)
+#7 C:\xampp\htdocs\inventario\app\Controllers\Responsivas.php(30): view('responsivas', Array)
+#8 C:\xampp\htdocs\inventario\system\CodeIgniter.php(933): App\Controllers\Responsivas->index()
+#9 C:\xampp\htdocs\inventario\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+#10 C:\xampp\htdocs\inventario\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\inventario\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\inventario\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\inventario\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-09-30 19:00:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nombreEmpleado' in 'field list'
+[Method: GET, Route: responsivas]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Views\responsivas.php(76): CodeIgniter\Database\BaseConnection->query('SELECT nombreEmpleado FROM empleados WHERE idEmpleado = ?', [...])
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\responsivas.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('responsivas', [], true)
+ 5 APPPATH\Controllers\Responsivas.php(30): view('responsivas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 19:00:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nombreEmpleado' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT nombreEmpleado FROM empleados WHERE idEmpleado = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT nombreEmpleado FROM empleados WHERE idEmpleado = \'1\'')
+ 3 APPPATH\Views\responsivas.php(76): CodeIgniter\Database\BaseConnection->query('SELECT nombreEmpleado FROM empleados WHERE idEmpleado = ?', [...])
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\responsivas.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('responsivas', [], true)
+ 7 APPPATH\Controllers\Responsivas.php(30): view('responsivas', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 19:00:16 --> [Caused by] mysqli_sql_exception: Unknown column 'nombreEmpleado' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT nombreEmpleado FROM empleados WHERE idEmpleado = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT nombreEmpleado FROM empleados WHERE idEmpleado = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT nombreEmpleado FROM empleados WHERE idEmpleado = \'1\'')
+ 4 APPPATH\Views\responsivas.php(76): CodeIgniter\Database\BaseConnection->query('SELECT nombreEmpleado FROM empleados WHERE idEmpleado = ?', [...])
+ 5 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\responsivas.php')
+ 6 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('responsivas', [], true)
+ 8 APPPATH\Controllers\Responsivas.php(30): view('responsivas', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 19:00:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-30 19:00:20 --> mysqli_sql_exception: Unknown column 'nombreEmpleado' in 'field list' in C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT nombreEm...', 0)
+#1 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT nombreEm...')
+#2 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT nombreEm...')
+#3 C:\xampp\htdocs\inventario\app\Views\responsivas.php(76): CodeIgniter\Database\BaseConnection->query('SELECT nombreEm...', Array)
+#4 C:\xampp\htdocs\inventario\system\View\View.php(234): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\inventario\system\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\xampp\htdocs\inventario\system\Common.php(1171): CodeIgniter\View\View->render('responsivas', Array, true)
+#7 C:\xampp\htdocs\inventario\app\Controllers\Responsivas.php(30): view('responsivas', Array)
+#8 C:\xampp\htdocs\inventario\system\CodeIgniter.php(933): App\Controllers\Responsivas->index()
+#9 C:\xampp\htdocs\inventario\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+#10 C:\xampp\htdocs\inventario\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\inventario\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\inventario\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\inventario\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-09-30 19:00:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nombreEmpleado' in 'field list'
+[Method: GET, Route: responsivas]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Views\responsivas.php(76): CodeIgniter\Database\BaseConnection->query('SELECT nombreEmpleado FROM empleados WHERE idEmpleado = ?', [...])
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\responsivas.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('responsivas', [], true)
+ 5 APPPATH\Controllers\Responsivas.php(30): view('responsivas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 19:00:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nombreEmpleado' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT nombreEmpleado FROM empleados WHERE idEmpleado = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT nombreEmpleado FROM empleados WHERE idEmpleado = \'1\'')
+ 3 APPPATH\Views\responsivas.php(76): CodeIgniter\Database\BaseConnection->query('SELECT nombreEmpleado FROM empleados WHERE idEmpleado = ?', [...])
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\responsivas.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('responsivas', [], true)
+ 7 APPPATH\Controllers\Responsivas.php(30): view('responsivas', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 19:00:20 --> [Caused by] mysqli_sql_exception: Unknown column 'nombreEmpleado' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT nombreEmpleado FROM empleados WHERE idEmpleado = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT nombreEmpleado FROM empleados WHERE idEmpleado = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT nombreEmpleado FROM empleados WHERE idEmpleado = \'1\'')
+ 4 APPPATH\Views\responsivas.php(76): CodeIgniter\Database\BaseConnection->query('SELECT nombreEmpleado FROM empleados WHERE idEmpleado = ?', [...])
+ 5 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\responsivas.php')
+ 6 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('responsivas', [], true)
+ 8 APPPATH\Controllers\Responsivas.php(30): view('responsivas', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 19:01:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 19:01:03 --> ErrorException: Undefined property: stdClass::$nombreEmpleado
+[Method: GET, Route: responsivas]
+in APPPATH\Views\responsivas.php on line 76.
+ 1 APPPATH\Views\responsivas.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nombreEmpleado', 'C:\\xampp\\htdocs\\inventario\\app\\Views\\responsivas.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\responsivas.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('responsivas', [], true)
+ 5 APPPATH\Controllers\Responsivas.php(30): view('responsivas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 19:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 19:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 19:02:21 --> Error: Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+[Method: GET, Route: responsivas]
+in APPPATH\Views\responsivas.php on line 76.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('responsivas', [], true)
+ 4 APPPATH\Controllers\Responsivas.php(30): view('responsivas', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 19:02:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 19:04:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 19:05:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 19:05:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 19:05:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 19:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-30 19:09:36 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '=idTipo) where idAparato= '7'' at line 1 in C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT nombreTi...', 0)
+#1 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT nombreTi...')
+#2 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT nombreTi...')
+#3 C:\xampp\htdocs\inventario\app\Views\responsivas.php(47): CodeIgniter\Database\BaseConnection->query('SELECT nombreTi...', Array)
+#4 C:\xampp\htdocs\inventario\system\View\View.php(234): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\inventario\system\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\xampp\htdocs\inventario\system\Common.php(1171): CodeIgniter\View\View->render('responsivas', Array, true)
+#7 C:\xampp\htdocs\inventario\app\Controllers\Responsivas.php(30): view('responsivas', Array)
+#8 C:\xampp\htdocs\inventario\system\CodeIgniter.php(933): App\Controllers\Responsivas->index()
+#9 C:\xampp\htdocs\inventario\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+#10 C:\xampp\htdocs\inventario\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\inventario\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\inventario\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\inventario\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-09-30 19:09:36 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '=idTipo) where idAparato= '7'' at line 1
+[Method: GET, Route: responsivas]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Views\responsivas.php(47): CodeIgniter\Database\BaseConnection->query('SELECT nombreTipo, marca, modelo, serio from aparatos join tipo_aparatos USING(tipo=idTipo) where idAparato= ?', [...])
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\responsivas.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('responsivas', [], true)
+ 5 APPPATH\Controllers\Responsivas.php(30): view('responsivas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 19:09:36 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '=idTipo) where idAparato= '7'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT nombreTipo, marca, modelo, serio from aparatos join tipo_aparatos USING(tipo=idTipo) where idAparato= \'7\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT nombreTipo, marca, modelo, serio from aparatos join tipo_aparatos USING(tipo=idTipo) where idAparato= \'7\'')
+ 3 APPPATH\Views\responsivas.php(47): CodeIgniter\Database\BaseConnection->query('SELECT nombreTipo, marca, modelo, serio from aparatos join tipo_aparatos USING(tipo=idTipo) where idAparato= ?', [...])
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\responsivas.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('responsivas', [], true)
+ 7 APPPATH\Controllers\Responsivas.php(30): view('responsivas', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 19:09:36 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '=idTipo) where idAparato= '7'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT nombreTipo, marca, modelo, serio from aparatos join tipo_aparatos USING(tipo=idTipo) where idAparato= \'7\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT nombreTipo, marca, modelo, serio from aparatos join tipo_aparatos USING(tipo=idTipo) where idAparato= \'7\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT nombreTipo, marca, modelo, serio from aparatos join tipo_aparatos USING(tipo=idTipo) where idAparato= \'7\'')
+ 4 APPPATH\Views\responsivas.php(47): CodeIgniter\Database\BaseConnection->query('SELECT nombreTipo, marca, modelo, serio from aparatos join tipo_aparatos USING(tipo=idTipo) where idAparato= ?', [...])
+ 5 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\responsivas.php')
+ 6 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('responsivas', [], true)
+ 8 APPPATH\Controllers\Responsivas.php(30): view('responsivas', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 19:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-30 19:10:16 --> mysqli_sql_exception: Unknown column 'serio' in 'field list' in C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT nombreTi...', 0)
+#1 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT nombreTi...')
+#2 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT nombreTi...')
+#3 C:\xampp\htdocs\inventario\app\Views\responsivas.php(47): CodeIgniter\Database\BaseConnection->query('SELECT nombreTi...', Array)
+#4 C:\xampp\htdocs\inventario\system\View\View.php(234): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\inventario\system\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\xampp\htdocs\inventario\system\Common.php(1171): CodeIgniter\View\View->render('responsivas', Array, true)
+#7 C:\xampp\htdocs\inventario\app\Controllers\Responsivas.php(30): view('responsivas', Array)
+#8 C:\xampp\htdocs\inventario\system\CodeIgniter.php(933): App\Controllers\Responsivas->index()
+#9 C:\xampp\htdocs\inventario\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+#10 C:\xampp\htdocs\inventario\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\inventario\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\inventario\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\inventario\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-09-30 19:10:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'serio' in 'field list'
+[Method: GET, Route: responsivas]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Views\responsivas.php(47): CodeIgniter\Database\BaseConnection->query('SELECT nombreTipo, marca, modelo, serio from aparatos join tipo_aparatos ON(tipo=idTipo) where idAparato= ?', [...])
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\responsivas.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('responsivas', [], true)
+ 5 APPPATH\Controllers\Responsivas.php(30): view('responsivas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 19:10:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'serio' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT nombreTipo, marca, modelo, serio from aparatos join tipo_aparatos ON(tipo=idTipo) where idAparato= \'7\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT nombreTipo, marca, modelo, serio from aparatos join tipo_aparatos ON(tipo=idTipo) where idAparato= \'7\'')
+ 3 APPPATH\Views\responsivas.php(47): CodeIgniter\Database\BaseConnection->query('SELECT nombreTipo, marca, modelo, serio from aparatos join tipo_aparatos ON(tipo=idTipo) where idAparato= ?', [...])
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\responsivas.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('responsivas', [], true)
+ 7 APPPATH\Controllers\Responsivas.php(30): view('responsivas', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 19:10:16 --> [Caused by] mysqli_sql_exception: Unknown column 'serio' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT nombreTipo, marca, modelo, serio from aparatos join tipo_aparatos ON(tipo=idTipo) where idAparato= \'7\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT nombreTipo, marca, modelo, serio from aparatos join tipo_aparatos ON(tipo=idTipo) where idAparato= \'7\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT nombreTipo, marca, modelo, serio from aparatos join tipo_aparatos ON(tipo=idTipo) where idAparato= \'7\'')
+ 4 APPPATH\Views\responsivas.php(47): CodeIgniter\Database\BaseConnection->query('SELECT nombreTipo, marca, modelo, serio from aparatos join tipo_aparatos ON(tipo=idTipo) where idAparato= ?', [...])
+ 5 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\responsivas.php')
+ 6 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('responsivas', [], true)
+ 8 APPPATH\Controllers\Responsivas.php(30): view('responsivas', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 19:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 19:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-30 19:10:21 --> mysqli_sql_exception: Unknown column 'serio' in 'field list' in C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT nombreTi...', 0)
+#1 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT nombreTi...')
+#2 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT nombreTi...')
+#3 C:\xampp\htdocs\inventario\app\Views\responsivas.php(47): CodeIgniter\Database\BaseConnection->query('SELECT nombreTi...', Array)
+#4 C:\xampp\htdocs\inventario\system\View\View.php(234): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\inventario\system\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\xampp\htdocs\inventario\system\Common.php(1171): CodeIgniter\View\View->render('responsivas', Array, true)
+#7 C:\xampp\htdocs\inventario\app\Controllers\Responsivas.php(30): view('responsivas', Array)
+#8 C:\xampp\htdocs\inventario\system\CodeIgniter.php(933): App\Controllers\Responsivas->index()
+#9 C:\xampp\htdocs\inventario\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+#10 C:\xampp\htdocs\inventario\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\inventario\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\inventario\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\inventario\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-09-30 19:10:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'serio' in 'field list'
+[Method: GET, Route: responsivas]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Views\responsivas.php(47): CodeIgniter\Database\BaseConnection->query('SELECT nombreTipo, marca, modelo, serio from aparatos join tipo_aparatos ON(tipo=idTipo) where idAparato= ?', [...])
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\responsivas.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('responsivas', [], true)
+ 5 APPPATH\Controllers\Responsivas.php(30): view('responsivas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 19:10:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'serio' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT nombreTipo, marca, modelo, serio from aparatos join tipo_aparatos ON(tipo=idTipo) where idAparato= \'7\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT nombreTipo, marca, modelo, serio from aparatos join tipo_aparatos ON(tipo=idTipo) where idAparato= \'7\'')
+ 3 APPPATH\Views\responsivas.php(47): CodeIgniter\Database\BaseConnection->query('SELECT nombreTipo, marca, modelo, serio from aparatos join tipo_aparatos ON(tipo=idTipo) where idAparato= ?', [...])
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\responsivas.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('responsivas', [], true)
+ 7 APPPATH\Controllers\Responsivas.php(30): view('responsivas', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 19:10:21 --> [Caused by] mysqli_sql_exception: Unknown column 'serio' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT nombreTipo, marca, modelo, serio from aparatos join tipo_aparatos ON(tipo=idTipo) where idAparato= \'7\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT nombreTipo, marca, modelo, serio from aparatos join tipo_aparatos ON(tipo=idTipo) where idAparato= \'7\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT nombreTipo, marca, modelo, serio from aparatos join tipo_aparatos ON(tipo=idTipo) where idAparato= \'7\'')
+ 4 APPPATH\Views\responsivas.php(47): CodeIgniter\Database\BaseConnection->query('SELECT nombreTipo, marca, modelo, serio from aparatos join tipo_aparatos ON(tipo=idTipo) where idAparato= ?', [...])
+ 5 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\responsivas.php')
+ 6 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('responsivas', [], true)
+ 8 APPPATH\Controllers\Responsivas.php(30): view('responsivas', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 19:11:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 19:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 19:11:14 --> Error: Object of class stdClass could not be converted to string
+[Method: GET, Route: responsivas]
+in APPPATH\Views\responsivas.php on line 53.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('responsivas', [], true)
+ 4 APPPATH\Controllers\Responsivas.php(30): view('responsivas', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 19:12:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 19:12:41 --> ErrorException: Undefined property: stdClass::$aparato
+[Method: GET, Route: responsivas]
+in APPPATH\Views\responsivas.php on line 48.
+ 1 APPPATH\Views\responsivas.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$aparato', 'C:\\xampp\\htdocs\\inventario\\app\\Views\\responsivas.php', 48)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\responsivas.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('responsivas', [], true)
+ 5 APPPATH\Controllers\Responsivas.php(30): view('responsivas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 19:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 19:12:57 --> ErrorException: Undefined property: stdClass::$aparato
+[Method: GET, Route: responsivas]
+in APPPATH\Views\responsivas.php on line 48.
+ 1 APPPATH\Views\responsivas.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$aparato', 'C:\\xampp\\htdocs\\inventario\\app\\Views\\responsivas.php', 48)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\responsivas.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('responsivas', [], true)
+ 5 APPPATH\Controllers\Responsivas.php(30): view('responsivas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Responsivas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Responsivas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 19:14:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 19:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 19:15:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 19:18:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 19:19:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 19:20:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 19:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 19:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 19:26:10 --> ErrorException: Undefined array key "idArea"
+[Method: GET, Route: empleados]
+in APPPATH\Views\empleados.php on line 35.
+ 1 APPPATH\Views\empleados.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idArea"', 'C:\\xampp\\htdocs\\inventario\\app\\Views\\empleados.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\empleados.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('empleados', [], true)
+ 5 APPPATH\Controllers\Empleados.php(18): view('empleados', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-30 19:27:09 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: empleados]
+in APPPATH\Views\empleados.php on line 40.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('empleados', [], true)
+ 4 APPPATH\Controllers\Empleados.php(18): view('empleados', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Empleados->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 19:28:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 19:28:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 19:28:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 19:28:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 19:29:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-30 19:32:33 --> ErrorException: Undefined variable $empleado
+[Method: GET, Route: aparatos]
+in APPPATH\Views\aparatos.php on line 46.
+ 1 APPPATH\Views\aparatos.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $empleado', 'C:\\xampp\\htdocs\\inventario\\app\\Views\\aparatos.php', 46)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\inventario\\app\\Views\\aparatos.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('aparatos', [], true)
+ 5 APPPATH\Controllers\Aparatos.php(28): view('aparatos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Aparatos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-09-30 19:33:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 21:47:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 21:47:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 21:47:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-30 21:48:28 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`inventario`.`responsivas`, CONSTRAINT `fk_idAparato` FOREIGN KEY (`idAparato`) REFERENCES `aparatos` (`idAparato`)) in C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `ap...', 0)
+#1 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ap...')
+#2 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ap...')
+#3 C:\xampp\htdocs\inventario\system\Database\BaseBuilder.php(2843): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ap...', Array, false)
+#4 C:\xampp\htdocs\inventario\app\Controllers\Aparatos.php(158): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\inventario\system\CodeIgniter.php(933): App\Controllers\Aparatos->delete('8')
+#6 C:\xampp\htdocs\inventario\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+#7 C:\xampp\htdocs\inventario\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\inventario\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\inventario\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\inventario\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+INFO - 2024-09-30 21:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-30 21:48:33 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`inventario`.`responsivas`, CONSTRAINT `fk_idAparato` FOREIGN KEY (`idAparato`) REFERENCES `aparatos` (`idAparato`)) in C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `ap...', 0)
+#1 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ap...')
+#2 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ap...')
+#3 C:\xampp\htdocs\inventario\system\Database\BaseBuilder.php(2843): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ap...', Array, false)
+#4 C:\xampp\htdocs\inventario\app\Controllers\Aparatos.php(158): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\inventario\system\CodeIgniter.php(933): App\Controllers\Aparatos->delete('9')
+#6 C:\xampp\htdocs\inventario\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+#7 C:\xampp\htdocs\inventario\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\inventario\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\inventario\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\inventario\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+INFO - 2024-09-30 21:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-30 21:50:54 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`inventario`.`responsivas`, CONSTRAINT `fk_idAparato` FOREIGN KEY (`idAparato`) REFERENCES `aparatos` (`idAparato`)) in C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `ap...', 0)
+#1 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ap...')
+#2 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ap...')
+#3 C:\xampp\htdocs\inventario\system\Database\BaseBuilder.php(2843): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ap...', Array, false)
+#4 C:\xampp\htdocs\inventario\app\Controllers\Aparatos.php(155): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\inventario\system\CodeIgniter.php(933): App\Controllers\Aparatos->delete('7')
+#6 C:\xampp\htdocs\inventario\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+#7 C:\xampp\htdocs\inventario\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\inventario\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\inventario\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\inventario\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+INFO - 2024-09-30 21:50:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-30 21:50:58 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`inventario`.`responsivas`, CONSTRAINT `fk_idAparato` FOREIGN KEY (`idAparato`) REFERENCES `aparatos` (`idAparato`)) in C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `ap...', 0)
+#1 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ap...')
+#2 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ap...')
+#3 C:\xampp\htdocs\inventario\system\Database\BaseBuilder.php(2843): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ap...', Array, false)
+#4 C:\xampp\htdocs\inventario\app\Controllers\Aparatos.php(155): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\inventario\system\CodeIgniter.php(933): App\Controllers\Aparatos->delete('8')
+#6 C:\xampp\htdocs\inventario\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+#7 C:\xampp\htdocs\inventario\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\inventario\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\inventario\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\inventario\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+INFO - 2024-09-30 21:50:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-30 21:51:04 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`inventario`.`responsivas`, CONSTRAINT `fk_idAparato` FOREIGN KEY (`idAparato`) REFERENCES `aparatos` (`idAparato`)) in C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `ap...', 0)
+#1 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ap...')
+#2 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ap...')
+#3 C:\xampp\htdocs\inventario\system\Database\BaseBuilder.php(2843): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ap...', Array, false)
+#4 C:\xampp\htdocs\inventario\app\Controllers\Aparatos.php(155): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\inventario\system\CodeIgniter.php(933): App\Controllers\Aparatos->delete('16')
+#6 C:\xampp\htdocs\inventario\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+#7 C:\xampp\htdocs\inventario\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\inventario\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\inventario\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\inventario\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+INFO - 2024-09-30 21:51:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-30 21:51:10 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`inventario`.`responsivas`, CONSTRAINT `fk_idAparato` FOREIGN KEY (`idAparato`) REFERENCES `aparatos` (`idAparato`)) in C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\inventario\system\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `ap...', 0)
+#1 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ap...')
+#2 C:\xampp\htdocs\inventario\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ap...')
+#3 C:\xampp\htdocs\inventario\system\Database\BaseBuilder.php(2843): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ap...', Array, false)
+#4 C:\xampp\htdocs\inventario\app\Controllers\Aparatos.php(155): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\inventario\system\CodeIgniter.php(933): App\Controllers\Aparatos->delete('16')
+#6 C:\xampp\htdocs\inventario\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aparatos))
+#7 C:\xampp\htdocs\inventario\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\inventario\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\inventario\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\inventario\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+INFO - 2024-09-30 21:51:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 21:51:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 21:51:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 21:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 21:52:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 21:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 21:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 21:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 21:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 21:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 21:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 21:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 21:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 21:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 21:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 21:55:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 21:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 21:55:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 21:56:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 21:56:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 21:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 21:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 21:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 21:57:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 21:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 21:57:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 22:12:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 22:14:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 22:16:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 22:17:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 22:18:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 22:21:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 22:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 22:21:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-30 22:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
